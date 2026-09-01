@@ -1,0 +1,200 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "example.computer-science.closed-loop-architecture",
+  "title": "Closed-loop scientific computing architecture",
+  "domain": "computer_science",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Architecture is a reusable generic template."
+    ]
+  },
+  "canvas": {
+    "width_pt": 960,
+    "height_pt": 540,
+    "margin_pt": 42,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": -12,
+      "y": 20,
+      "z": 0
+    },
+    "origin_pt": [
+      480,
+      270
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "../styles/default-scientific-3d.style.json",
+  "object_budget": 80,
+  "objects": [
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Belief-aware computational workflow",
+      "geometry": {
+        "left_pt": 70,
+        "top_pt": 28,
+        "width_pt": 820,
+        "height_pt": 36
+      }
+    },
+    {
+      "id": "node.input",
+      "kind": "primitive",
+      "semantic_role": "input_data",
+      "geometry": {
+        "shape": "rounded_rectangle",
+        "left_pt": 80,
+        "top_pt": 210,
+        "width_pt": 150,
+        "height_pt": 76,
+        "depth_pt": 12
+      },
+      "appearance": {
+        "fill": "#EAF0F6",
+        "outline": "#315A8A"
+      },
+      "text": "Evidence / data"
+    },
+    {
+      "id": "node.state",
+      "kind": "primitive",
+      "semantic_role": "state_update",
+      "geometry": {
+        "shape": "rounded_rectangle",
+        "left_pt": 290,
+        "top_pt": 210,
+        "width_pt": 150,
+        "height_pt": 76,
+        "depth_pt": 12
+      },
+      "appearance": {
+        "fill": "#EAF0F6",
+        "outline": "#315A8A"
+      },
+      "text": "Belief update"
+    },
+    {
+      "id": "node.proposal",
+      "kind": "primitive",
+      "semantic_role": "optimization",
+      "geometry": {
+        "shape": "rounded_rectangle",
+        "left_pt": 500,
+        "top_pt": 210,
+        "width_pt": 150,
+        "height_pt": 76,
+        "depth_pt": 12
+      },
+      "appearance": {
+        "fill": "#FCEFE7",
+        "outline": "#D97735"
+      },
+      "text": "Optimization / proposal"
+    },
+    {
+      "id": "node.validation",
+      "kind": "primitive",
+      "semantic_role": "physical_validation",
+      "geometry": {
+        "shape": "rounded_rectangle",
+        "left_pt": 710,
+        "top_pt": 210,
+        "width_pt": 150,
+        "height_pt": 76,
+        "depth_pt": 12
+      },
+      "appearance": {
+        "fill": "#E9F3EE",
+        "outline": "#4E8B70"
+      },
+      "text": "Physical validation"
+    },
+    {
+      "id": "edge.input-state",
+      "kind": "connector",
+      "from": "node.input",
+      "to": "node.state",
+      "semantic_role": "data_flow"
+    },
+    {
+      "id": "edge.state-proposal",
+      "kind": "connector",
+      "from": "node.state",
+      "to": "node.proposal",
+      "semantic_role": "decision_context"
+    },
+    {
+      "id": "edge.proposal-validation",
+      "kind": "connector",
+      "from": "node.proposal",
+      "to": "node.validation",
+      "semantic_role": "candidate"
+    },
+    {
+      "id": "edge.feedback",
+      "kind": "connector",
+      "from": "node.validation",
+      "to": "node.state",
+      "semantic_role": "feedback",
+      "appearance": {
+        "line_style": "dashed",
+        "routing": "bottom_loop"
+      },
+      "text": "accept / reject / rollback"
+    },
+    {
+      "id": "tensor.inset",
+      "kind": "primitive",
+      "semantic_role": "3d_tensor_inset",
+      "geometry": {
+        "shape": "box",
+        "position3d": [
+          0,
+          -135,
+          0
+        ],
+        "width_pt": 100,
+        "height_pt": 74,
+        "depth_pt": 42
+      },
+      "appearance": {
+        "fill": "#DDE7F0",
+        "material": "diagram_solid"
+      },
+      "text": "Feature tensor"
+    },
+    {
+      "id": "note",
+      "kind": "text",
+      "text": "Use 2D for logic; reserve 3D for a physical or tensor inset.",
+      "geometry": {
+        "left_pt": 270,
+        "top_pt": 445,
+        "width_pt": 420,
+        "height_pt": 28
+      },
+      "appearance": {
+        "font_size_pt": 10,
+        "font_color": "#6B7280",
+        "alignment": "center"
+      }
+    }
+  ],
+  "constraints": [
+    "left_to_right_primary_flow",
+    "feedback_loop_below_nodes",
+    "connectors_attached",
+    "3d_not_used_for_decision_logic"
+  ],
+  "outputs": {
+    "pptx": "artifacts/computer-architecture.pptx",
+    "preview_png": "artifacts/computer-architecture.png"
+  },
+  "representation": "mixed"
+}

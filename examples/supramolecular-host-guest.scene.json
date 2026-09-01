@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "supramolecular-host-guest",
+  "title": "Illustrative editable host–guest envelope",
+  "domain": "supramolecular_chemistry",
+  "representation": "2.5d",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Training/example scene; dimensions and geometry are illustrative unless explicitly stated."
+    ]
+  },
+  "canvas": {
+    "width_pt": 720,
+    "height_pt": 405,
+    "margin_pt": 24,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin_pt": [
+      360,
+      205
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "styles/default-scientific-3d.style.json",
+  "object_budget": 300,
+  "objects": [
+    {
+      "id": "host.back",
+      "kind": "panel",
+      "semantic_role": "host_back_panel",
+      "geometry": {
+        "shape": "polygon",
+        "position3d": [
+          0,
+          0,
+          -30
+        ]
+      },
+      "appearance": {
+        "fill": "#8AAFD1",
+        "transparency": 0.55
+      }
+    },
+    {
+      "id": "host.side.left",
+      "kind": "panel",
+      "semantic_role": "host_side_panel",
+      "geometry": {
+        "shape": "trapezoid",
+        "position3d": [
+          -55,
+          0,
+          0
+        ]
+      },
+      "appearance": {
+        "fill": "#6C97BF",
+        "transparency": 0.45
+      }
+    },
+    {
+      "id": "host.side.right",
+      "kind": "panel",
+      "semantic_role": "host_side_panel",
+      "geometry": {
+        "shape": "trapezoid",
+        "position3d": [
+          55,
+          0,
+          0
+        ]
+      },
+      "appearance": {
+        "fill": "#6C97BF",
+        "transparency": 0.45
+      }
+    },
+    {
+      "id": "host.rim.front",
+      "kind": "primitive",
+      "semantic_role": "host_front_rim",
+      "geometry": {
+        "shape": "ring",
+        "position3d": [
+          0,
+          0,
+          35
+        ]
+      },
+      "appearance": {
+        "fill": "#447AA8"
+      }
+    },
+    {
+      "id": "guest",
+      "kind": "primitive",
+      "semantic_role": "guest_sphere",
+      "geometry": {
+        "shape": "sphere",
+        "position3d": [
+          0,
+          0,
+          8
+        ],
+        "radius_pt": 30
+      },
+      "appearance": {
+        "fill": "#D57A4B"
+      }
+    },
+    {
+      "id": "complex",
+      "kind": "host_guest",
+      "semantic_role": "illustrative_inclusion_complex",
+      "host_ids": [
+        "host.back",
+        "host.side.left",
+        "host.side.right",
+        "host.rim.front"
+      ],
+      "guest_id": "guest",
+      "provenance": {
+        "status": "illustrative host envelope; not atomistic geometry"
+      }
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Editable schematic host–guest inclusion",
+      "geometry": {
+        "position3d": [
+          -215,
+          135,
+          0
+        ]
+      }
+    }
+  ],
+  "constraints": [
+    "editable_native_objects",
+    "semantic_ids",
+    "no_computer_use",
+    "render_before_completion"
+  ],
+  "outputs": {
+    "pptx": "artifacts/supramolecular-host-guest.pptx",
+    "preview_png": "artifacts/supramolecular-host-guest.png",
+    "scene_copy": "artifacts/supramolecular-host-guest.scene.json",
+    "qa_report": "artifacts/supramolecular-host-guest.qa.json"
+  }
+}

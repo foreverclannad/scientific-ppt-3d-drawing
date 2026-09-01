@@ -1,0 +1,165 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "crystal-lattice",
+  "title": "Toy lattice generator specification",
+  "domain": "crystallography",
+  "representation": "3d",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Training/example scene; dimensions and geometry are illustrative unless explicitly stated."
+    ]
+  },
+  "canvas": {
+    "width_pt": 720,
+    "height_pt": 405,
+    "margin_pt": 24,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 24,
+      "y": -34,
+      "z": 8
+    },
+    "origin_pt": [
+      360,
+      205
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "styles/default-scientific-3d.style.json",
+  "object_budget": 300,
+  "objects": [
+    {
+      "id": "lattice.toy",
+      "kind": "lattice",
+      "semantic_role": "illustrative_binary_lattice",
+      "generator": {
+        "lattice_vectors": [
+          [
+            72,
+            0,
+            0
+          ],
+          [
+            0,
+            72,
+            0
+          ],
+          [
+            0,
+            0,
+            72
+          ]
+        ],
+        "basis": [
+          {
+            "id": "A",
+            "fractional": [
+              0,
+              0,
+              0
+            ],
+            "kind": "atom",
+            "element": "A",
+            "geometry": {
+              "radius_pt": 9
+            },
+            "appearance": {
+              "fill": "#4E79A7"
+            }
+          },
+          {
+            "id": "B",
+            "fractional": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "kind": "atom",
+            "element": "B",
+            "geometry": {
+              "radius_pt": 7
+            },
+            "appearance": {
+              "fill": "#E07B54"
+            }
+          }
+        ],
+        "repeats": [
+          3,
+          3,
+          2
+        ],
+        "boundary_mode": "half_open",
+        "origin": [
+          -72,
+          -72,
+          -36
+        ]
+      },
+      "provenance": {
+        "status": "toy illustrative lattice; no physical compound implied"
+      }
+    },
+    {
+      "id": "cell.boundary",
+      "kind": "unit_cell",
+      "semantic_role": "unit_cell_boundary",
+      "geometry": {
+        "origin3d": [
+          -72,
+          -72,
+          -36
+        ],
+        "vectors3d": [
+          [
+            72,
+            0,
+            0
+          ],
+          [
+            0,
+            72,
+            0
+          ],
+          [
+            0,
+            0,
+            72
+          ]
+        ]
+      },
+      "appearance": {
+        "line_dash": "dash"
+      }
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Motif + lattice vectors + deterministic repeats",
+      "geometry": {
+        "position3d": [
+          -250,
+          150,
+          0
+        ]
+      }
+    }
+  ],
+  "constraints": [
+    "editable_native_objects",
+    "semantic_ids",
+    "no_computer_use",
+    "render_before_completion"
+  ],
+  "outputs": {
+    "pptx": "artifacts/crystal-lattice.pptx",
+    "preview_png": "artifacts/crystal-lattice.png",
+    "scene_copy": "artifacts/crystal-lattice.scene.json",
+    "qa_report": "artifacts/crystal-lattice.qa.json"
+  }
+}

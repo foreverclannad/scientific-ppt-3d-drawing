@@ -1,0 +1,7 @@
+interface:
+  display_name: "Scientific PPT 3D Drawing"
+  short_description: "High-fidelity reference reconstruction in editable PowerPoint"
+  brand_color: "#315A8A"
+  default_prompt: "Use $scientific-ppt-3d-drawing to reconstruct my reference faithfully as one visible, editable PowerPoint slide, then measure and correct visual differences."
+policy:
+  allow_implicit_invocation: true

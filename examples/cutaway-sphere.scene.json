@@ -1,0 +1,136 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "cutaway-sphere",
+  "title": "Editable projected sphere cutaway",
+  "domain": "materials_science",
+  "representation": "2.5d",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Training/example scene; dimensions and geometry are illustrative unless explicitly stated."
+    ]
+  },
+  "canvas": {
+    "width_pt": 720,
+    "height_pt": 405,
+    "margin_pt": 24,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 20,
+      "y": -25,
+      "z": 0
+    },
+    "origin_pt": [
+      360,
+      205
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "styles/default-scientific-3d.style.json",
+  "object_budget": 300,
+  "objects": [
+    {
+      "id": "particle.shell",
+      "kind": "primitive",
+      "semantic_role": "outer_shell",
+      "geometry": {
+        "shape": "sphere",
+        "position3d": [
+          0,
+          0,
+          0
+        ],
+        "radius_pt": 82
+      },
+      "appearance": {
+        "fill": "#76A6C9",
+        "material": "matte"
+      }
+    },
+    {
+      "id": "particle.cutaway",
+      "kind": "cutaway",
+      "semantic_role": "section_operation",
+      "target": "particle.shell",
+      "section_spec": {
+        "plane": {
+          "point3d": [
+            12,
+            0,
+            0
+          ],
+          "normal3d": [
+            1,
+            0.45,
+            0.2
+          ]
+        },
+        "keep_side": "negative",
+        "show_cap": true,
+        "show_rim": true,
+        "show_removed_piece": false,
+        "interior_depth_pt": 22
+      }
+    },
+    {
+      "id": "particle.cap",
+      "kind": "section_face",
+      "semantic_role": "exposed_section_face",
+      "geometry": {
+        "center3d": [
+          12,
+          0,
+          0
+        ]
+      },
+      "appearance": {
+        "fill": "#E7C79C",
+        "light_relation": "planar_normal"
+      }
+    },
+    {
+      "id": "particle.rim",
+      "kind": "primitive",
+      "semantic_role": "section_rim",
+      "geometry": {
+        "shape": "ring",
+        "position3d": [
+          13,
+          0,
+          0
+        ]
+      },
+      "appearance": {
+        "fill": "#B87455"
+      }
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Cutaway = section geometry + coherent lighting",
+      "geometry": {
+        "position3d": [
+          -220,
+          135,
+          0
+        ]
+      }
+    }
+  ],
+  "constraints": [
+    "editable_native_objects",
+    "semantic_ids",
+    "no_computer_use",
+    "render_before_completion"
+  ],
+  "outputs": {
+    "pptx": "artifacts/cutaway-sphere.pptx",
+    "preview_png": "artifacts/cutaway-sphere.png",
+    "scene_copy": "artifacts/cutaway-sphere.scene.json",
+    "qa_report": "artifacts/cutaway-sphere.qa.json"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "template": "3d.curved_extruded",
+  "semantic": "feedback",
+  "origin": [
+    0,
+    0
+  ],
+  "length": 120,
+  "width": 18,
+  "id": "test.arrow"
+}

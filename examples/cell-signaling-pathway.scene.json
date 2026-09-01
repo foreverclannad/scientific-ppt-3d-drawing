@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "cell-signaling-pathway",
+  "title": "Generic editable signaling/pathway grammar",
+  "domain": "biochemistry",
+  "representation": "2d",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Training/example scene; dimensions and geometry are illustrative unless explicitly stated."
+    ]
+  },
+  "canvas": {
+    "width_pt": 720,
+    "height_pt": 405,
+    "margin_pt": 24,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin_pt": [
+      360,
+      205
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "styles/default-scientific-3d.style.json",
+  "object_budget": 300,
+  "objects": [
+    {
+      "id": "compartment.membrane",
+      "kind": "panel",
+      "semantic_role": "membrane_compartment",
+      "geometry": {
+        "shape": "rounded_band",
+        "position3d": [
+          0,
+          70,
+          0
+        ]
+      },
+      "appearance": {
+        "fill": "#D9E7F0"
+      }
+    },
+    {
+      "id": "signal.input",
+      "kind": "pathway_node",
+      "semantic_role": "input_signal",
+      "text": "Input",
+      "geometry": {
+        "position3d": [
+          -230,
+          80,
+          0
+        ]
+      }
+    },
+    {
+      "id": "node.receptor",
+      "kind": "pathway_node",
+      "semantic_role": "receptor_placeholder",
+      "text": "Receptor",
+      "geometry": {
+        "position3d": [
+          -110,
+          40,
+          0
+        ]
+      }
+    },
+    {
+      "id": "node.processor",
+      "kind": "pathway_node",
+      "semantic_role": "processing_step",
+      "text": "Process",
+      "geometry": {
+        "position3d": [
+          20,
+          -20,
+          0
+        ]
+      }
+    },
+    {
+      "id": "node.output",
+      "kind": "pathway_node",
+      "semantic_role": "output_state",
+      "text": "Output",
+      "geometry": {
+        "position3d": [
+          180,
+          -70,
+          0
+        ]
+      }
+    },
+    {
+      "id": "edge.input",
+      "kind": "pathway_edge",
+      "semantic_role": "activation",
+      "from": "signal.input",
+      "to": "node.receptor"
+    },
+    {
+      "id": "edge.process",
+      "kind": "pathway_edge",
+      "semantic_role": "forward_process",
+      "from": "node.receptor",
+      "to": "node.processor"
+    },
+    {
+      "id": "edge.output",
+      "kind": "pathway_edge",
+      "semantic_role": "forward_process",
+      "from": "node.processor",
+      "to": "node.output"
+    },
+    {
+      "id": "edge.feedback",
+      "kind": "pathway_edge",
+      "semantic_role": "feedback_or_rollback",
+      "from": "node.output",
+      "to": "node.processor",
+      "appearance": {
+        "line_dash": "dash"
+      }
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Generic pathway grammar — no biological relation implied",
+      "geometry": {
+        "position3d": [
+          -235,
+          150,
+          0
+        ]
+      }
+    }
+  ],
+  "constraints": [
+    "editable_native_objects",
+    "semantic_ids",
+    "no_computer_use",
+    "render_before_completion"
+  ],
+  "outputs": {
+    "pptx": "artifacts/cell-signaling-pathway.pptx",
+    "preview_png": "artifacts/cell-signaling-pathway.png",
+    "scene_copy": "artifacts/cell-signaling-pathway.scene.json",
+    "qa_report": "artifacts/cell-signaling-pathway.qa.json"
+  }
+}

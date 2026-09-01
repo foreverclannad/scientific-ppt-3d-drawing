@@ -1,0 +1,194 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "example.quantum-chemistry.energy-levels",
+  "title": "Energy levels and orbital assets",
+  "domain": "quantum_chemistry",
+  "fidelity": {
+    "mode": "hybrid",
+    "source_data": [
+      {
+        "id": "energy_table",
+        "type": "placeholder",
+        "description": "Replace with validated state energies and units."
+      }
+    ],
+    "assumptions": [
+      "Level spacing is illustrative until a numerical energy table is supplied."
+    ]
+  },
+  "canvas": {
+    "width_pt": 960,
+    "height_pt": 540,
+    "margin_pt": 42,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin_pt": [
+      480,
+      270
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "../styles/default-scientific-3d.style.json",
+  "object_budget": 50,
+  "objects": [
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Electronic states, transitions, and validated orbital assets",
+      "geometry": {
+        "left_pt": 60,
+        "top_pt": 28,
+        "width_pt": 840,
+        "height_pt": 36
+      }
+    },
+    {
+      "id": "level.S0",
+      "kind": "energy_level",
+      "semantic_role": "state_level",
+      "text": "S₀",
+      "geometry": {
+        "left_pt": 120,
+        "top_pt": 405,
+        "width_pt": 270,
+        "height_pt": 0
+      },
+      "appearance": {
+        "line_width_pt": 2
+      }
+    },
+    {
+      "id": "level.S1",
+      "kind": "energy_level",
+      "semantic_role": "state_level",
+      "text": "S₁",
+      "geometry": {
+        "left_pt": 120,
+        "top_pt": 300,
+        "width_pt": 270,
+        "height_pt": 0
+      },
+      "appearance": {
+        "line_width_pt": 2
+      }
+    },
+    {
+      "id": "level.S2",
+      "kind": "energy_level",
+      "semantic_role": "state_level",
+      "text": "S₂",
+      "geometry": {
+        "left_pt": 120,
+        "top_pt": 205,
+        "width_pt": 270,
+        "height_pt": 0
+      },
+      "appearance": {
+        "line_width_pt": 2
+      }
+    },
+    {
+      "id": "transition.absorption",
+      "kind": "connector",
+      "from": "level.S0",
+      "to": "level.S2",
+      "semantic_role": "allowed_transition",
+      "text": "hν",
+      "appearance": {
+        "line_style": "solid",
+        "arrow_end": "triangle",
+        "color": "#315A8A"
+      }
+    },
+    {
+      "id": "transition.relaxation",
+      "kind": "connector",
+      "from": "level.S2",
+      "to": "level.S1",
+      "semantic_role": "nonradiative_transition",
+      "appearance": {
+        "line_style": "dashed",
+        "arrow_end": "triangle",
+        "color": "#6B7280"
+      }
+    },
+    {
+      "id": "orbital.asset.left",
+      "kind": "asset",
+      "semantic_role": "validated_orbital_isosurface",
+      "asset_query": {
+        "domain": "quantum_chemistry",
+        "tags": [
+          "molecular orbital",
+          "signed isosurface"
+        ],
+        "view": "front"
+      },
+      "geometry": {
+        "left_pt": 535,
+        "top_pt": 160,
+        "width_pt": 150,
+        "height_pt": 150
+      },
+      "constraints": [
+        "must_exist_in_catalog",
+        "must_include_isovalue_and_sign_convention"
+      ]
+    },
+    {
+      "id": "orbital.asset.right",
+      "kind": "asset",
+      "semantic_role": "validated_orbital_isosurface",
+      "asset_query": {
+        "domain": "quantum_chemistry",
+        "tags": [
+          "molecular orbital",
+          "signed isosurface"
+        ],
+        "view": "front"
+      },
+      "geometry": {
+        "left_pt": 735,
+        "top_pt": 160,
+        "width_pt": 150,
+        "height_pt": 150
+      },
+      "constraints": [
+        "must_exist_in_catalog",
+        "must_include_isovalue_and_sign_convention"
+      ]
+    },
+    {
+      "id": "warning",
+      "kind": "annotation",
+      "text": "Do not replace validated orbital isosurfaces with arbitrary PowerPoint blobs.",
+      "geometry": {
+        "left_pt": 515,
+        "top_pt": 365,
+        "width_pt": 380,
+        "height_pt": 52
+      },
+      "appearance": {
+        "fill": "#FFF7ED",
+        "outline": "#D97735"
+      }
+    }
+  ],
+  "constraints": [
+    "level_spacing_must_be_labeled_illustrative_or_data_scaled",
+    "asset_ids_must_resolve",
+    "labels_2d"
+  ],
+  "outputs": {
+    "pptx": "artifacts/quantum-energy-levels.pptx",
+    "preview_png": "artifacts/quantum-energy-levels.png"
+  },
+  "representation": "mixed"
+}

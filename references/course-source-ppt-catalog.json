@@ -1,0 +1,1074 @@
+{
+  "catalog_version": "1.0",
+  "title": "PPT3D course source-PPT catalog",
+  "source_archive": "课件.zip",
+  "source_files_included": true,
+  "deck_count": 25,
+  "aggregate": {
+    "deck_count": 25,
+    "slide_count": 46,
+    "shape_count": 1207,
+    "group_count": 36,
+    "custom_geometry_count": 229,
+    "three_d_count": 403,
+    "gradient_count": 31,
+    "picture_count": 78,
+    "connector_count": 92
+  },
+  "style_aggregate": {
+    "materials": {
+      "clear": 3,
+      "dkEdge": 3,
+      "softEdge": 1,
+      "metal": 9,
+      "plastic": 12
+    },
+    "cameras": {
+      "perspectiveRelaxedModerately": 1,
+      "orthographicFront": 123
+    },
+    "lights": {
+      "('soft', 't')": 10,
+      "('threePt', 't')": 107,
+      "('contrasting', 't')": 7
+    },
+    "bevelT": [
+      [
+        [
+          null,
+          "26670",
+          "26670"
+        ],
+        4
+      ],
+      [
+        [
+          null,
+          "33338",
+          "33338"
+        ],
+        10
+      ],
+      [
+        [
+          null,
+          "0",
+          "101600"
+        ],
+        7
+      ],
+      [
+        [
+          null,
+          "111760",
+          "111760"
+        ],
+        2
+      ],
+      [
+        [
+          null,
+          "38100",
+          "12700"
+        ],
+        2
+      ],
+      [
+        [
+          null,
+          "0",
+          "0"
+        ],
+        220
+      ],
+      [
+        [
+          null,
+          null,
+          "12700"
+        ],
+        2
+      ],
+      [
+        [
+          null,
+          "206799",
+          "206799"
+        ],
+        6
+      ],
+      [
+        [
+          null,
+          "153085",
+          "153085"
+        ],
+        6
+      ],
+      [
+        [
+          null,
+          "47582",
+          "47582"
+        ],
+        12
+      ],
+      [
+        [
+          null,
+          "12700",
+          "12700"
+        ],
+        1
+      ],
+      [
+        [
+          null,
+          "38100",
+          null
+        ],
+        14
+      ],
+      [
+        [
+          null,
+          "88900",
+          "88900"
+        ],
+        7
+      ]
+    ],
+    "bevelB": [
+      [
+        [
+          null,
+          "26670",
+          "26670"
+        ],
+        2
+      ],
+      [
+        [
+          null,
+          "33338",
+          "33338"
+        ],
+        10
+      ],
+      [
+        [
+          null,
+          "0",
+          "101600"
+        ],
+        7
+      ],
+      [
+        [
+          null,
+          "111760",
+          "111760"
+        ],
+        2
+      ],
+      [
+        [
+          "angle",
+          "190500",
+          "107950"
+        ],
+        1
+      ],
+      [
+        [
+          "angle",
+          "95250",
+          "1644650"
+        ],
+        2
+      ],
+      [
+        [
+          null,
+          "0",
+          "0"
+        ],
+        220
+      ],
+      [
+        [
+          null,
+          null,
+          "12700"
+        ],
+        2
+      ],
+      [
+        [
+          null,
+          "206799",
+          "206799"
+        ],
+        6
+      ],
+      [
+        [
+          null,
+          "153085",
+          "153085"
+        ],
+        6
+      ],
+      [
+        [
+          null,
+          "47582",
+          "47582"
+        ],
+        12
+      ],
+      [
+        [
+          null,
+          "12700",
+          "12700"
+        ],
+        1
+      ],
+      [
+        [
+          null,
+          null,
+          null
+        ],
+        14
+      ]
+    ],
+    "geometry": {
+      "rect": 516,
+      "ellipse": 189,
+      "roundRect": 30,
+      "blockArc": 15,
+      "arc": 1,
+      "line": 68,
+      "donut": 1,
+      "octagon": 2,
+      "straightConnector1": 10,
+      "bentConnector3": 14,
+      "parallelogram": 7,
+      "star5": 11
+    },
+    "fill": {
+      "null": 282,
+      "solidFill": 520,
+      "noFill": 373,
+      "gradFill": 31,
+      "pattFill": 1
+    },
+    "grad_modes": {
+      "linear": 19,
+      "path": 12
+    },
+    "effects": {
+      "softEdge": 1
+    },
+    "line_heads": {
+      "none": 63,
+      "oval": 5
+    },
+    "line_tails": {
+      "none": 63,
+      "triangle": 24
+    },
+    "colors": {
+      "bg1": 144,
+      "00B0F0": 5,
+      "0070C0": 16,
+      "C00000": 9,
+      "tx1": 45,
+      "00B050": 19,
+      "A0E6FF": 3,
+      "FFFF00": 3,
+      "6FBFC8": 4,
+      "F9BF81": 1,
+      "76CDFA": 4,
+      "27D99E": 1,
+      "accent4": 1,
+      "bg2": 2,
+      "F19B61": 1,
+      "0077D0": 157,
+      "0076CF": 5,
+      "0076CE": 5,
+      "0076CD": 1,
+      "0075CD": 4,
+      "0075CC": 5,
+      "0075CB": 3,
+      "0074CB": 2,
+      "0074CA": 5,
+      "0074C9": 4,
+      "0073C9": 1,
+      "0073C8": 5,
+      "0073C7": 5,
+      "0073C6": 1,
+      "0072C6": 4,
+      "0072C5": 5,
+      "0072C4": 2,
+      "0071C4": 3,
+      "0071C3": 5,
+      "0071C2": 4,
+      "0070C2": 1,
+      "0070C1": 5,
+      "DDAD50": 12,
+      "1CB657": 1,
+      "55E58C": 4,
+      "1AA64F": 2,
+      "09FF78": 1,
+      "00863D": 1,
+      "C5C5C5": 2,
+      "7F7F7F": 1,
+      "FF5353": 2,
+      "FF3F3F": 2,
+      "FF0000": 7,
+      "2590DD": 1,
+      "50B6FF": 2,
+      "1E7EC3": 1,
+      "003B66": 2,
+      "109CFF": 2,
+      "3DAEFF": 2,
+      "0069B8": 2,
+      "007AD6": 2,
+      "00D25F": 1,
+      "accent1": 18,
+      "208AB5": 12,
+      "3891B7": 4,
+      "848182": 1,
+      "623FC5": 2,
+      "EF6163": 1,
+      "3FEBB6": 2,
+      "A6A6A6": 1,
+      "FF322C": 1,
+      "77A5DF": 3,
+      "10FA0D": 11,
+      "F40520": 1,
+      "00D291": 1,
+      "accent2": 1,
+      "7030A0": 7
+    }
+  },
+  "decks": [
+    {
+      "catalog_id": "course.deck.01",
+      "file_name": "[2.1]--第1节 深度与旋转 （打开3D绘图的大门）_(1)知识点自查_1.pptx",
+      "lesson": 1,
+      "topic": "深度与旋转",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "3d",
+        "camera",
+        "coordinates",
+        "depth",
+        "extrusion",
+        "rotation"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.1]--第1节 深度与旋转 （打开3D绘图的大门）_(1)知识点自查_1.pptx"
+    },
+    {
+      "catalog_id": "course.deck.02",
+      "file_name": "[2.1]--第1节 深度与旋转 （打开3D绘图的大门）_(2)跟着做随堂素材_第1节.pptx",
+      "lesson": 1,
+      "topic": "深度与旋转",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "3d",
+        "camera",
+        "coordinates",
+        "depth",
+        "extrusion",
+        "rotation"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 6,
+        "groups": 0,
+        "custom_geometries": 4,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[2.1]--第1节 深度与旋转 （打开3D绘图的大门）_(2)跟着做随堂素材_第1节.pptx"
+    },
+    {
+      "catalog_id": "course.deck.03",
+      "file_name": "[2.2]--第2节 三维旋转参数详解 （知道PPT有3个坐标系吗？）_(1)知识点自查_2.pptx",
+      "lesson": 2,
+      "topic": "三维旋转参数详解",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "camera",
+        "coordinates",
+        "rotation"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.2]--第2节 三维旋转参数详解 （知道PPT有3个坐标系吗？）_(1)知识点自查_2.pptx"
+    },
+    {
+      "catalog_id": "course.deck.04",
+      "file_name": "[2.3]--第3节 图形布尔运算 （这个功能很强大）_(1)知识点自查_3.pptx",
+      "lesson": 3,
+      "topic": "图形布尔运算",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "boolean",
+        "freeform"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.3]--第3节 图形布尔运算 （这个功能很强大）_(1)知识点自查_3.pptx"
+    },
+    {
+      "catalog_id": "course.deck.05",
+      "file_name": "[2.3]--第3节 图形布尔运算 （这个功能很强大）_(2)跟着做随堂素材_第3节.pptx",
+      "lesson": 3,
+      "topic": "图形布尔运算",
+      "source_role": "construction_source",
+      "reuse_class": "mixed",
+      "tags": [
+        "boolean",
+        "freeform"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 22,
+        "groups": 0,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 22,
+        "connectors": 0
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[2.3]--第3节 图形布尔运算 （这个功能很强大）_(2)跟着做随堂素材_第3节.pptx"
+    },
+    {
+      "catalog_id": "course.deck.06",
+      "file_name": "[2.4]--第4节 材料与光源 （如何得到漂亮的质感）_(1)知识点自查_4.pptx",
+      "lesson": 4,
+      "topic": "材料与光源",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "lighting",
+        "material"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.4]--第4节 材料与光源 （如何得到漂亮的质感）_(1)知识点自查_4.pptx"
+    },
+    {
+      "catalog_id": "course.deck.07",
+      "file_name": "[2.4]--第4节 材料与光源 （如何得到漂亮的质感）_(2)跟着做随堂素材_第4节.pptx",
+      "lesson": 4,
+      "topic": "材料与光源",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "lighting",
+        "material"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 2,
+        "shapes": 27,
+        "groups": 1,
+        "custom_geometries": 1,
+        "three_d_shapes": 24,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[2.4]--第4节 材料与光源 （如何得到漂亮的质感）_(2)跟着做随堂素材_第4节.pptx"
+    },
+    {
+      "catalog_id": "course.deck.08",
+      "file_name": "[2.5]--第5节 纹理与渐变 （变化无穷的形状填充）_(1)知识点自查_5.pptx",
+      "lesson": 5,
+      "topic": "纹理与渐变",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "gradient",
+        "texture"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.5]--第5节 纹理与渐变 （变化无穷的形状填充）_(1)知识点自查_5.pptx"
+    },
+    {
+      "catalog_id": "course.deck.09",
+      "file_name": "[2.6]--第6节 曲线与线条编辑 （自由画出任何形状）_(1)知识点自查_6.pptx",
+      "lesson": 6,
+      "topic": "曲线与线条编辑",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "freeform",
+        "line"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.6]--第6节 曲线与线条编辑 （自由画出任何形状）_(1)知识点自查_6.pptx"
+    },
+    {
+      "catalog_id": "course.deck.10",
+      "file_name": "[2.7]--第7节 棱台 （12种三维曲面）_(1)知识点自查_7.pptx",
+      "lesson": 7,
+      "topic": "棱台",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "bevel",
+        "surface"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.7]--第7节 棱台 （12种三维曲面）_(1)知识点自查_7.pptx"
+    },
+    {
+      "catalog_id": "course.deck.11",
+      "file_name": "[2.7]--第7节 棱台 （12种三维曲面）_(2)跟着做随堂素材_第7节.pptx",
+      "lesson": 7,
+      "topic": "棱台",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "bevel",
+        "surface"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 49,
+        "groups": 2,
+        "custom_geometries": 11,
+        "three_d_shapes": 22,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 13
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[2.7]--第7节 棱台 （12种三维曲面）_(2)跟着做随堂素材_第7节.pptx"
+    },
+    {
+      "catalog_id": "course.deck.12",
+      "file_name": "[2.8]--第8节 组合与距底边高度（打通3D作图的任督二脉）_(1)知识点自查_8.pptx",
+      "lesson": 8,
+      "topic": "组合与距底边高度",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "grouping",
+        "z-offset"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.8]--第8节 组合与距底边高度（打通3D作图的任督二脉）_(1)知识点自查_8.pptx"
+    },
+    {
+      "catalog_id": "course.deck.13",
+      "file_name": "[2.9]--第9节 作图思路 （万变不离其宗）_(1)知识点自查_9.pptx",
+      "lesson": 9,
+      "topic": "作图思路",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "decomposition",
+        "workflow"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[2.9]--第9节 作图思路 （万变不离其宗）_(1)知识点自查_9.pptx"
+    },
+    {
+      "catalog_id": "course.deck.14",
+      "file_name": "[2.9]--第9节 作图思路 （万变不离其宗）_(2)第一章 作业.pptx",
+      "lesson": 9,
+      "topic": "作图思路",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "decomposition",
+        "workflow"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 2,
+        "shapes": 22,
+        "groups": 4,
+        "custom_geometries": 1,
+        "three_d_shapes": 16,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[2.9]--第9节 作图思路 （万变不离其宗）_(2)第一章 作业.pptx"
+    },
+    {
+      "catalog_id": "course.deck.15",
+      "file_name": "[3.10]--第17节 剖面（解开形状剖面的秘密）_(1)知识点自查_17.pptx",
+      "lesson": 17,
+      "topic": "剖面",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "cross-section",
+        "cutaway"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[3.10]--第17节 剖面（解开形状剖面的秘密）_(1)知识点自查_17.pptx"
+    },
+    {
+      "catalog_id": "course.deck.16",
+      "file_name": "[3.11]--第18节 渐变中心 （打破PPT的渐变功能限制）_(1)知识点自查_18.pptx",
+      "lesson": 18,
+      "topic": "渐变中心",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "gradient"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[3.11]--第18节 渐变中心 （打破PPT的渐变功能限制）_(1)知识点自查_18.pptx"
+    },
+    {
+      "catalog_id": "course.deck.17",
+      "file_name": "[3.6]--第14节 透视法与拼接法 （另辟蹊径的3D作图新方案·上）_(1)知识点自查_14.pptx",
+      "lesson": 14,
+      "topic": "透视法与拼接法",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "perspective",
+        "stitching"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[3.6]--第14节 透视法与拼接法 （另辟蹊径的3D作图新方案·上）_(1)知识点自查_14.pptx"
+    },
+    {
+      "catalog_id": "course.deck.18",
+      "file_name": "[3.7]--第15节 积分法 （另辟蹊径的3D作图新方案·下）_(1)知识点自查_15.pptx",
+      "lesson": 15,
+      "topic": "积分法",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "array",
+        "path-distribution"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[3.7]--第15节 积分法 （另辟蹊径的3D作图新方案·下）_(1)知识点自查_15.pptx"
+    },
+    {
+      "catalog_id": "course.deck.19",
+      "file_name": "[3.9]--第16节 渐变锐化（以一敌多的重要技巧）_(1)知识点自查_16.pptx",
+      "lesson": 16,
+      "topic": "渐变锐化",
+      "source_role": "knowledge_reference",
+      "reuse_class": "reference_only",
+      "tags": [
+        "gradient"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 7,
+        "groups": 1,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Use the extracted rules; do not copy the entire slide as an editable asset without inspecting its object tree.",
+      "asset_relative_path": "source-pptx/[3.9]--第16节 渐变锐化（以一敌多的重要技巧）_(1)知识点自查_16.pptx"
+    },
+    {
+      "catalog_id": "course.deck.20",
+      "file_name": "[4.1]--第20节 多种器具 （镜头 电极 注射器 圆底烧瓶 移液枪 烧杯_(1)实验器具器具 绘制素材.pptx",
+      "lesson": 20,
+      "topic": "多种器具",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "apparatus",
+        "labware"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 7,
+        "shapes": 474,
+        "groups": 3,
+        "custom_geometries": 161,
+        "three_d_shapes": 251,
+        "gradients": 2,
+        "pictures": 7,
+        "connectors": 26
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[4.1]--第20节 多种器具 （镜头 电极 注射器 圆底烧瓶 移液枪 烧杯_(1)实验器具器具 绘制素材.pptx"
+    },
+    {
+      "catalog_id": "course.deck.21",
+      "file_name": "[4.2]--第21节 机械臂 （逼真可动的机械臂）_(1)第21节 绘制素材.pptx",
+      "lesson": 21,
+      "topic": "机械臂",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "articulated",
+        "engineering",
+        "mechanical"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 6,
+        "shapes": 209,
+        "groups": 0,
+        "custom_geometries": 22,
+        "three_d_shapes": 55,
+        "gradients": 18,
+        "pictures": 7,
+        "connectors": 53
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[4.2]--第21节 机械臂 （逼真可动的机械臂）_(1)第21节 绘制素材.pptx"
+    },
+    {
+      "catalog_id": "course.deck.22",
+      "file_name": "[4.3]--第22节 超分子包合 （柱芳烃 杯芳烃 葫芦脲 环糊精）_(1)第22节 绘制素材.pptx",
+      "lesson": 22,
+      "topic": "超分子包合",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "host-guest",
+        "supramolecular"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 6,
+        "shapes": 220,
+        "groups": 0,
+        "custom_geometries": 3,
+        "three_d_shapes": 0,
+        "gradients": 11,
+        "pictures": 33,
+        "connectors": 0
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[4.3]--第22节 超分子包合 （柱芳烃 杯芳烃 葫芦脲 环糊精）_(1)第22节 绘制素材.pptx"
+    },
+    {
+      "catalog_id": "course.deck.23",
+      "file_name": "[4.7]--第26节 配色 （搞定专业级配色）_(1)跟着做随堂素材 第26节.pptx",
+      "lesson": 26,
+      "topic": "配色",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "color",
+        "palette"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 4,
+        "shapes": 41,
+        "groups": 4,
+        "custom_geometries": 11,
+        "three_d_shapes": 13,
+        "gradients": 0,
+        "pictures": 0,
+        "connectors": 0
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[4.7]--第26节 配色 （搞定专业级配色）_(1)跟着做随堂素材 第26节.pptx"
+    },
+    {
+      "catalog_id": "course.deck.24",
+      "file_name": "[5.2]--第30节 动画基础（把图片变成动画短片）_(1)随堂跟着做素材 第30节.pptx",
+      "lesson": 30,
+      "topic": "动画基础",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "animation"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 38,
+        "groups": 8,
+        "custom_geometries": 15,
+        "three_d_shapes": 22,
+        "gradients": 0,
+        "pictures": 8,
+        "connectors": 0
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[5.2]--第30节 动画基础（把图片变成动画短片）_(1)随堂跟着做素材 第30节.pptx"
+    },
+    {
+      "catalog_id": "course.deck.25",
+      "file_name": "[6.4]--第34节 圆管的剖面 （导弹装药和血管剖面的画法）_(1)跟着做随堂素材 第34节.pptx",
+      "lesson": 34,
+      "topic": "圆管的剖面",
+      "source_role": "construction_source",
+      "reuse_class": "editable_source",
+      "tags": [
+        "cross-section",
+        "cutaway",
+        "tube"
+      ],
+      "slide_size_pt": {
+        "width_pt": 960.0,
+        "height_pt": 540.0
+      },
+      "metrics": {
+        "slides": 1,
+        "shapes": 1,
+        "groups": 0,
+        "custom_geometries": 0,
+        "three_d_shapes": 0,
+        "gradients": 0,
+        "pictures": 1,
+        "connectors": 0
+      },
+      "warning": "Inspect and copy only named editable shapes/groups; rename default Chinese shape names after import.",
+      "asset_relative_path": "source-pptx/[6.4]--第34节 圆管的剖面 （导弹装药和血管剖面的画法）_(1)跟着做随堂素材 第34节.pptx"
+    }
+  ],
+  "policy": {
+    "reference_only": "Use rules/text as reference. Do not treat a whole slide screenshot as an editable scientific asset.",
+    "editable_source": "Inspect object tree, copy selected native shapes/groups, and assign stable semantic names.",
+    "mixed": "Inspect each slide and object before reuse."
+  },
+  "bundled_bridge_asset_root": "assets/source-pptx"
+}

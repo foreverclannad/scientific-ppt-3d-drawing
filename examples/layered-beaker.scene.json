@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "scene_id": "example.layered-beaker",
+  "title": "Layered transparent beaker",
+  "domain": "materials_science",
+  "representation": "2.5d",
+  "abstraction": {
+    "target_claim": "Show why a transparent vessel must be assembled in back-to-front layers rather than treated as one transparent cylinder.",
+    "essential_information": [
+      "semantic structure",
+      "direction and spatial relations"
+    ],
+    "supporting_information": [
+      "editable PowerPoint construction"
+    ],
+    "omitted_information": [
+      "unreported quantitative detail"
+    ],
+    "risk_of_misinterpretation": [
+      "decorative depth must not imply quantitative magnitude"
+    ]
+  },
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Geometry is an editable explanatory construction unless an object provenance record states otherwise."
+    ]
+  },
+  "canvas": {
+    "width_pt": 960,
+    "height_pt": 540,
+    "margin_pt": 28,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin_pt": [
+      0,
+      0
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "../styles/default-scientific-3d.style.json",
+  "object_budget": 40,
+  "objects": [
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Editable layered beaker construction",
+      "geometry": {
+        "left_pt": 60,
+        "top_pt": 24,
+        "width_pt": 840,
+        "height_pt": 32
+      },
+      "appearance": {
+        "font_size_pt": 18,
+        "font_weight": "bold",
+        "alignment": "center"
+      }
+    },
+    {
+      "id": "beaker.back_shell",
+      "kind": "apparatus_part",
+      "semantic_role": "rear_glass_shell",
+      "geometry": {
+        "shape": "trapezoid",
+        "left_pt": 300,
+        "top_pt": 120,
+        "width_pt": 360,
+        "height_pt": 310
+      },
+      "appearance": {
+        "fill": "#DCECF4",
+        "transparency": 0.78,
+        "outline": "#5B7F91",
+        "line_width_pt": 1.4
+      }
+    },
+    {
+      "id": "beaker.liquid",
+      "kind": "apparatus_part",
+      "semantic_role": "liquid_body",
+      "geometry": {
+        "shape": "trapezoid",
+        "left_pt": 326,
+        "top_pt": 270,
+        "width_pt": 308,
+        "height_pt": 142
+      },
+      "appearance": {
+        "fill": "#73B7D8",
+        "transparency": 0.18,
+        "outline": "#4B92B4",
+        "line_width_pt": 0.8
+      }
+    },
+    {
+      "id": "beaker.meniscus",
+      "kind": "apparatus_part",
+      "semantic_role": "liquid_meniscus",
+      "geometry": {
+        "shape": "oval",
+        "left_pt": 326,
+        "top_pt": 256,
+        "width_pt": 308,
+        "height_pt": 28
+      },
+      "appearance": {
+        "fill": "#9DD2EA",
+        "transparency": 0.25,
+        "outline": "#4B92B4",
+        "line_width_pt": 1.0
+      }
+    },
+    {
+      "id": "beaker.front_shell",
+      "kind": "apparatus_part",
+      "semantic_role": "front_glass_shell",
+      "geometry": {
+        "shape": "trapezoid",
+        "left_pt": 300,
+        "top_pt": 120,
+        "width_pt": 360,
+        "height_pt": 310
+      },
+      "appearance": {
+        "fill": "#FFFFFF",
+        "transparency": 0.9,
+        "outline": "#5B7F91",
+        "line_width_pt": 1.4
+      }
+    },
+    {
+      "id": "beaker.rim",
+      "kind": "apparatus_part",
+      "semantic_role": "front_rim",
+      "geometry": {
+        "shape": "oval",
+        "left_pt": 292,
+        "top_pt": 101,
+        "width_pt": 376,
+        "height_pt": 44
+      },
+      "appearance": {
+        "fill": "#FFFFFF",
+        "transparency": 0.72,
+        "outline": "#486B7D",
+        "line_width_pt": 2.0
+      }
+    },
+    {
+      "id": "beaker.spout",
+      "kind": "freeform",
+      "semantic_role": "spout",
+      "geometry": {
+        "points3d": [
+          [
+            635,
+            122,
+            0
+          ],
+          [
+            688,
+            110,
+            0
+          ],
+          [
+            668,
+            152,
+            0
+          ],
+          [
+            632,
+            156,
+            0
+          ]
+        ],
+        "closed": true
+      },
+      "appearance": {
+        "fill": "#E7F2F7",
+        "transparency": 0.65,
+        "outline": "#486B7D",
+        "line_width_pt": 1.3
+      }
+    },
+    {
+      "id": "beaker.label",
+      "kind": "text",
+      "text": "Liquid level is illustrative",
+      "geometry": {
+        "left_pt": 360,
+        "top_pt": 328,
+        "width_pt": 240,
+        "height_pt": 22
+      },
+      "appearance": {
+        "font_size_pt": 10,
+        "alignment": "center",
+        "font_color": "#315A8A"
+      }
+    }
+  ],
+  "constraints": [
+    "semantic_object_names",
+    "editable_native_objects",
+    "single_camera_and_light_rig"
+  ],
+  "outputs": {
+    "pptx": "artifacts/example.layered-beaker.pptx",
+    "preview_png": "artifacts/example.layered-beaker.png",
+    "scene_copy": "artifacts/example.layered-beaker.scene.json",
+    "object_manifest": "artifacts/example.layered-beaker.objects.json",
+    "qa_report": "artifacts/example.layered-beaker.qa.json"
+  }
+}

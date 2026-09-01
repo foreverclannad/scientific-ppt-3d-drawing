@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "example.materials.porous-stitched-cube",
+  "title": "Porous cube using face stitching",
+  "domain": "materials_science",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Pattern is schematic and not a measured pore network."
+    ]
+  },
+  "canvas": {
+    "width_pt": 960,
+    "height_pt": 540,
+    "margin_pt": 42,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "perspective",
+    "rotation_deg": {
+      "x": -25,
+      "y": 32,
+      "z": 4
+    },
+    "origin_pt": [
+      480,
+      285
+    ],
+    "scale": 1.2,
+    "distance": 900,
+    "focal_length": 760
+  },
+  "style_ref": "../styles/default-scientific-3d.style.json",
+  "object_budget": 280,
+  "objects": [
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Face-stitched porous material schematic",
+      "geometry": {
+        "left_pt": 70,
+        "top_pt": 28,
+        "width_pt": 820,
+        "height_pt": 36
+      }
+    },
+    {
+      "id": "cube.face.front",
+      "kind": "panel",
+      "semantic_role": "patterned_face",
+      "geometry": {
+        "face": "front",
+        "center3d": [
+          0,
+          0,
+          100
+        ],
+        "width_pt": 260,
+        "height_pt": 260
+      },
+      "appearance": {
+        "fill": "#DCE6EF",
+        "pattern": "circular_pore_grid",
+        "pattern_rows": 5,
+        "pattern_columns": 5
+      }
+    },
+    {
+      "id": "cube.face.right",
+      "kind": "panel",
+      "semantic_role": "patterned_face",
+      "geometry": {
+        "face": "right",
+        "center3d": [
+          130,
+          0,
+          0
+        ],
+        "width_pt": 260,
+        "height_pt": 260
+      },
+      "appearance": {
+        "fill": "#C7D5E2",
+        "pattern": "circular_pore_grid",
+        "pattern_rows": 5,
+        "pattern_columns": 5
+      }
+    },
+    {
+      "id": "cube.face.top",
+      "kind": "panel",
+      "semantic_role": "patterned_face",
+      "geometry": {
+        "face": "top",
+        "center3d": [
+          0,
+          -130,
+          0
+        ],
+        "width_pt": 260,
+        "height_pt": 260
+      },
+      "appearance": {
+        "fill": "#ECF2F7",
+        "pattern": "circular_pore_grid",
+        "pattern_rows": 5,
+        "pattern_columns": 5
+      }
+    },
+    {
+      "id": "annotation.stitch",
+      "kind": "annotation",
+      "text": "Use separate face patterns and calibrate shared seams.",
+      "geometry": {
+        "left_pt": 615,
+        "top_pt": 390,
+        "width_pt": 270,
+        "height_pt": 60
+      },
+      "appearance": {
+        "fill": "#FFFFFF",
+        "outline": "#6B7280"
+      }
+    }
+  ],
+  "constraints": [
+    "face_specific_perspective",
+    "shared_corner_alignment",
+    "no_single_extruded_texture",
+    "camera_space_depth_sort"
+  ],
+  "outputs": {
+    "pptx": "artifacts/porous-stitched-cube.pptx",
+    "preview_png": "artifacts/porous-stitched-cube.png"
+  },
+  "representation": "3d"
+}

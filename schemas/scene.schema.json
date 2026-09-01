@@ -1,0 +1,564 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/scientific-ppt-3d/scene.schema.json",
+  "title": "Scientific PowerPoint Scene",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "scene_id",
+    "title",
+    "domain",
+    "fidelity",
+    "canvas",
+    "camera",
+    "objects",
+    "constraints",
+    "outputs"
+  ],
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "0.1",
+        "0.2",
+        "1.0"
+      ]
+    },
+    "scene_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "enum": [
+        "general_science",
+        "computational_chemistry",
+        "quantum_chemistry",
+        "supramolecular_chemistry",
+        "crystallography",
+        "materials_science",
+        "biochemistry",
+        "cell_biology",
+        "computer_science",
+        "power_systems",
+        "multidisciplinary"
+      ]
+    },
+    "workflow_mode": {
+      "enum": [
+        "reference_reconstruction",
+        "free_generation"
+      ]
+    },
+    "reference": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256",
+        "width_px",
+        "height_px",
+        "source",
+        "regions"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9A-Fa-f]{64}$"
+        },
+        "width_px": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height_px": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "bbox_norm",
+              "priority",
+              "content_type",
+              "route"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "bbox_norm": {
+                "type": "array",
+                "prefixItems": [
+                  {"type": "number", "minimum": 0, "maximum": 1},
+                  {"type": "number", "minimum": 0, "maximum": 1},
+                  {"type": "number", "exclusiveMinimum": 0, "maximum": 1},
+                  {"type": "number", "exclusiveMinimum": 0, "maximum": 1}
+                ],
+                "minItems": 4,
+                "maxItems": 4
+              },
+              "priority": {
+                "enum": ["critical", "major", "decorative"]
+              },
+              "recognized_text": {
+                "type": "string"
+              },
+              "content_type": {
+                "type": "string",
+                "minLength": 1
+              },
+              "route": {
+                "enum": ["native_ppt", "catalog_asset", "external_tool", "reference_crop"]
+              },
+              "source_asset_id": {
+                "type": "string"
+              },
+              "source_path": {
+                "type": "string"
+              },
+              "editability": {
+                "type": "string"
+              },
+              "review_status": {
+                "enum": ["pending", "matched", "unresolved"]
+              },
+              "notes": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "representation": {
+      "enum": [
+        "2d",
+        "2.5d",
+        "3d",
+        "external_asset_composite",
+        "mixed"
+      ]
+    },
+    "abstraction": {
+      "type": "object",
+      "properties": {
+        "target_claim": {
+          "type": "string",
+          "minLength": 1
+        },
+        "essential_information": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supporting_information": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "omitted_information": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "risk_of_misinterpretation": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "fidelity": {
+      "type": "object",
+      "required": [
+        "mode",
+        "source_data",
+        "assumptions"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "data_bound",
+            "illustrative",
+            "hybrid"
+          ]
+        },
+        "source_data": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "type"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "units": {
+                "type": "string"
+              },
+              "checksum": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "canvas": {
+      "type": "object",
+      "required": [
+        "width_pt",
+        "height_pt",
+        "margin_pt"
+      ],
+      "properties": {
+        "width_pt": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "height_pt": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "margin_pt": {
+          "type": "number",
+          "minimum": 0
+        },
+        "background": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    },
+    "camera": {
+      "type": "object",
+      "required": [
+        "projection",
+        "rotation_deg",
+        "origin_pt",
+        "scale"
+      ],
+      "properties": {
+        "projection": {
+          "enum": [
+            "orthographic",
+            "perspective"
+          ]
+        },
+        "rotation_deg": {
+          "type": "object",
+          "required": [
+            "x",
+            "y",
+            "z"
+          ],
+          "properties": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "z": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false
+        },
+        "origin_pt": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "scale": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "distance": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "focal_length": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "style_ref": {
+      "type": "string"
+    },
+    "palette_ref": {
+      "type": "string"
+    },
+    "object_budget": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]+$"
+          },
+          "kind": {
+            "enum": [
+              "primitive",
+              "atom",
+              "bond",
+              "text",
+              "connector",
+              "group",
+              "asset",
+              "table",
+              "chart",
+              "energy_level",
+              "panel",
+              "array",
+              "path_distribution",
+              "polyline",
+              "freeform",
+              "annotation",
+              "gradient_shape",
+              "cutaway",
+              "section_face",
+              "host_guest",
+              "lattice",
+              "unit_cell",
+              "polyhedron",
+              "membrane",
+              "lipid",
+              "pathway_node",
+              "pathway_edge",
+              "surface",
+              "arrow",
+              "labware",
+              "apparatus_part",
+              "molecule",
+              "wire_sphere",
+              "em_wave",
+              "wave_field",
+              "field_vector",
+              "external_3d_model"
+            ]
+          },
+          "semantic_role": {
+            "type": "string"
+          },
+          "geometry": {
+            "type": "object"
+          },
+          "appearance": {
+            "type": "object"
+          },
+          "table": {
+            "type": "object"
+          },
+          "chart": {
+            "type": "object"
+          },
+          "generator": {
+            "type": "object"
+          },
+          "section_spec": {
+            "type": "object"
+          },
+          "gradient_spec": {
+            "type": "object"
+          },
+          "text": {
+            "type": "string"
+          },
+          "element": {
+            "type": "string"
+          },
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "parent": {
+            "type": "string"
+          },
+          "host_id": {
+            "type": "string"
+          },
+          "guest_id": {
+            "type": "string"
+          },
+          "host_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "children": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "asset_query": {
+            "type": "object"
+          },
+          "source_asset_id": {
+            "type": "string"
+          },
+          "provenance": {
+            "type": "object"
+          },
+          "sampling": {
+            "type": "object"
+          },
+          "path": {
+            "type": "object"
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "required": [
+        "pptx",
+        "preview_png"
+      ],
+      "properties": {
+        "pptx": {
+          "type": "string"
+        },
+        "preview_png": {
+          "type": "string"
+        },
+        "pdf": {
+          "type": "string"
+        },
+        "scene_copy": {
+          "type": "string"
+        },
+        "object_manifest": {
+          "type": "string"
+        },
+        "qa_report": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.0"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "abstraction"
+        ],
+        "properties": {
+          "abstraction": {
+            "required": [
+              "target_claim",
+              "essential_information",
+              "omitted_information"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "workflow_mode": {
+            "const": "reference_reconstruction"
+          }
+        },
+        "required": ["workflow_mode"]
+      },
+      "then": {
+        "required": ["reference"]
+      }
+    }
+  ],
+  "additionalProperties": true
+}

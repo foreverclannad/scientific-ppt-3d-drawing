@@ -1,0 +1,103 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "curved-membrane",
+  "title": "Generated curved lipid bilayer",
+  "domain": "cell_biology",
+  "representation": "2.5d",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Training/example scene; dimensions and geometry are illustrative unless explicitly stated."
+    ]
+  },
+  "canvas": {
+    "width_pt": 720,
+    "height_pt": 405,
+    "margin_pt": 24,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin_pt": [
+      360,
+      205
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "styles/default-scientific-3d.style.json",
+  "object_budget": 300,
+  "objects": [
+    {
+      "id": "membrane.bilayer",
+      "kind": "membrane",
+      "semantic_role": "illustrative_curved_bilayer",
+      "generator": {
+        "path": {
+          "type": "wave",
+          "x_start": -220,
+          "x_end": 220,
+          "base_y": 0,
+          "amplitude": 36,
+          "cycles": 1.25,
+          "phase_deg": 0
+        },
+        "count": 28,
+        "leaflet_separation": 24,
+        "closed": false,
+        "id_prefix": "membrane",
+        "z": 0
+      },
+      "provenance": {
+        "status": "illustrative spacing and count"
+      }
+    },
+    {
+      "id": "protein.channel",
+      "kind": "primitive",
+      "semantic_role": "illustrative_membrane_protein",
+      "geometry": {
+        "shape": "capsule",
+        "position3d": [
+          25,
+          10,
+          8
+        ],
+        "width_pt": 32,
+        "height_pt": 78
+      },
+      "appearance": {
+        "fill": "#8D6AAE"
+      }
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Bilayer units follow local tangent/normal frames",
+      "geometry": {
+        "position3d": [
+          -235,
+          135,
+          0
+        ]
+      }
+    }
+  ],
+  "constraints": [
+    "editable_native_objects",
+    "semantic_ids",
+    "no_computer_use",
+    "render_before_completion"
+  ],
+  "outputs": {
+    "pptx": "artifacts/curved-membrane.pptx",
+    "preview_png": "artifacts/curved-membrane.png",
+    "scene_copy": "artifacts/curved-membrane.scene.json",
+    "qa_report": "artifacts/curved-membrane.qa.json"
+  }
+}

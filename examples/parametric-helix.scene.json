@@ -1,0 +1,126 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "example.general-science.parametric-helix",
+  "title": "Parametric helix using path distribution",
+  "domain": "general_science",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Helix parameters are diagrammatic."
+    ]
+  },
+  "canvas": {
+    "width_pt": 960,
+    "height_pt": 540,
+    "margin_pt": 42,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "perspective",
+    "rotation_deg": {
+      "x": -12,
+      "y": 38,
+      "z": -5
+    },
+    "origin_pt": [
+      480,
+      285
+    ],
+    "scale": 1.25,
+    "distance": 900,
+    "focal_length": 760
+  },
+  "style_ref": "../styles/default-scientific-3d.style.json",
+  "object_budget": 180,
+  "objects": [
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Deterministic path-distributed helix",
+      "geometry": {
+        "left_pt": 70,
+        "top_pt": 28,
+        "width_pt": 820,
+        "height_pt": 36
+      }
+    },
+    {
+      "id": "helix.main",
+      "kind": "path_distribution",
+      "semantic_role": "helix",
+      "path": {
+        "equation": "helix",
+        "center3d": [
+          0,
+          0,
+          -180
+        ],
+        "radius_pt": 95,
+        "pitch_pt": 170,
+        "turns": 2.4,
+        "phase_deg": 0
+      },
+      "sampling": {
+        "count": 72,
+        "orientation": "path_tangent",
+        "source_element": "rounded_segment"
+      },
+      "appearance": {
+        "fill": "#315A8A",
+        "material": "diagram_solid",
+        "segment_width_pt": 14
+      }
+    },
+    {
+      "id": "helix.axis",
+      "kind": "polyline",
+      "semantic_role": "reference_axis",
+      "geometry": {
+        "points3d": [
+          [
+            0,
+            0,
+            -200
+          ],
+          [
+            0,
+            0,
+            240
+          ]
+        ]
+      },
+      "appearance": {
+        "line_style": "dashed",
+        "color": "#9CA3AF"
+      }
+    },
+    {
+      "id": "note",
+      "kind": "text",
+      "text": "Count, radius, pitch, phase, and tangent orientation are explicit parameters.",
+      "geometry": {
+        "left_pt": 215,
+        "top_pt": 470,
+        "width_pt": 530,
+        "height_pt": 28
+      },
+      "appearance": {
+        "font_size_pt": 10,
+        "font_color": "#6B7280",
+        "alignment": "center"
+      }
+    }
+  ],
+  "constraints": [
+    "generated_from_one_source_element",
+    "semantic_segment_ids",
+    "object_budget_enforced",
+    "camera_space_depth_sort"
+  ],
+  "outputs": {
+    "pptx": "artifacts/parametric-helix.pptx",
+    "preview_png": "artifacts/parametric-helix.png"
+  },
+  "representation": "3d"
+}

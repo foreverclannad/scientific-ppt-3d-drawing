@@ -1,0 +1,226 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "example.computational-chemistry.tetrahedral-molecule",
+  "title": "Editable tetrahedral molecule (illustrative)",
+  "domain": "computational_chemistry",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Coordinates are an illustrative tetrahedral arrangement, not a claim about a named molecule."
+    ]
+  },
+  "canvas": {
+    "width_pt": 960,
+    "height_pt": 540,
+    "margin_pt": 42,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "perspective",
+    "rotation_deg": {
+      "x": -18,
+      "y": 28,
+      "z": -8
+    },
+    "origin_pt": [
+      480,
+      270
+    ],
+    "scale": 1.55,
+    "distance": 850,
+    "focal_length": 720
+  },
+  "style_ref": "../styles/default-scientific-3d.style.json",
+  "object_budget": 40,
+  "objects": [
+    {
+      "id": "title",
+      "kind": "text",
+      "semantic_role": "title",
+      "text": "Editable molecular scene — PPT MCP validation",
+      "geometry": {
+        "left_pt": 60,
+        "top_pt": 30,
+        "width_pt": 840,
+        "height_pt": 36
+      },
+      "appearance": {
+        "font_size_pt": 18,
+        "font_weight": "bold"
+      }
+    },
+    {
+      "id": "atom.C0",
+      "kind": "atom",
+      "element": "C",
+      "semantic_role": "central_atom",
+      "geometry": {
+        "position3d": [
+          0,
+          0,
+          0
+        ],
+        "radius_pt": 34
+      },
+      "appearance": {
+        "fill": "#4B5563",
+        "material": "molecular_atom"
+      }
+    },
+    {
+      "id": "atom.H1",
+      "kind": "atom",
+      "element": "H",
+      "geometry": {
+        "position3d": [
+          115,
+          115,
+          115
+        ],
+        "radius_pt": 22
+      },
+      "appearance": {
+        "fill": "#F3F4F6",
+        "outline": "#9CA3AF",
+        "material": "molecular_atom"
+      }
+    },
+    {
+      "id": "atom.H2",
+      "kind": "atom",
+      "element": "H",
+      "geometry": {
+        "position3d": [
+          -115,
+          -115,
+          115
+        ],
+        "radius_pt": 22
+      },
+      "appearance": {
+        "fill": "#F3F4F6",
+        "outline": "#9CA3AF",
+        "material": "molecular_atom"
+      }
+    },
+    {
+      "id": "atom.H3",
+      "kind": "atom",
+      "element": "H",
+      "geometry": {
+        "position3d": [
+          -115,
+          115,
+          -115
+        ],
+        "radius_pt": 22
+      },
+      "appearance": {
+        "fill": "#F3F4F6",
+        "outline": "#9CA3AF",
+        "material": "molecular_atom"
+      }
+    },
+    {
+      "id": "atom.H4",
+      "kind": "atom",
+      "element": "H",
+      "geometry": {
+        "position3d": [
+          115,
+          -115,
+          -115
+        ],
+        "radius_pt": 22
+      },
+      "appearance": {
+        "fill": "#F3F4F6",
+        "outline": "#9CA3AF",
+        "material": "molecular_atom"
+      }
+    },
+    {
+      "id": "bond.C0-H1",
+      "kind": "bond",
+      "from": "atom.C0",
+      "to": "atom.H1",
+      "geometry": {
+        "radius_pt": 8
+      },
+      "appearance": {
+        "fill": "#A8AFB7",
+        "material": "molecular_bond"
+      }
+    },
+    {
+      "id": "bond.C0-H2",
+      "kind": "bond",
+      "from": "atom.C0",
+      "to": "atom.H2",
+      "geometry": {
+        "radius_pt": 8
+      },
+      "appearance": {
+        "fill": "#A8AFB7",
+        "material": "molecular_bond"
+      }
+    },
+    {
+      "id": "bond.C0-H3",
+      "kind": "bond",
+      "from": "atom.C0",
+      "to": "atom.H3",
+      "geometry": {
+        "radius_pt": 8
+      },
+      "appearance": {
+        "fill": "#A8AFB7",
+        "material": "molecular_bond"
+      }
+    },
+    {
+      "id": "bond.C0-H4",
+      "kind": "bond",
+      "from": "atom.C0",
+      "to": "atom.H4",
+      "geometry": {
+        "radius_pt": 8
+      },
+      "appearance": {
+        "fill": "#A8AFB7",
+        "material": "molecular_bond"
+      }
+    },
+    {
+      "id": "note",
+      "kind": "text",
+      "semantic_role": "provenance_note",
+      "text": "Illustrative geometry — replace with validated XYZ coordinates for scientific use.",
+      "geometry": {
+        "left_pt": 190,
+        "top_pt": 480,
+        "width_pt": 580,
+        "height_pt": 24
+      },
+      "appearance": {
+        "font_size_pt": 10,
+        "font_color": "#6B7280",
+        "alignment": "center"
+      }
+    }
+  ],
+  "constraints": [
+    "single_camera",
+    "single_light_rig",
+    "semantic_object_names",
+    "camera_space_depth_sort",
+    "no_flattened_full_slide"
+  ],
+  "outputs": {
+    "pptx": "artifacts/scientific_ppt_3d_first_validation.pptx",
+    "preview_png": "artifacts/scientific_ppt_3d_first_validation.png",
+    "scene_copy": "artifacts/scientific_ppt_3d_first_validation.scene.json"
+  },
+  "representation": "3d"
+}

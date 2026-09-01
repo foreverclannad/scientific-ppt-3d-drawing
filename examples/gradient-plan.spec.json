@@ -1,0 +1,42 @@
+{
+  "type": "line",
+  "transition_mode": "hard",
+  "epsilon": 0.0001,
+  "coincident_supported": true,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.35,
+      "color_start": "#2F5E9E",
+      "color_end": "#5C87C2"
+    },
+    {
+      "start": 0.35,
+      "end": 0.7,
+      "color_start": "#4B9C72",
+      "color_end": "#7BBC94"
+    },
+    {
+      "start": 0.7,
+      "end": 1.0,
+      "color_start": "#BD6944",
+      "color_end": "#E09568"
+    }
+  ],
+  "geometry": {
+    "type": "path",
+    "inner_focus": {
+      "center_x": 0.3,
+      "center_y": 0.42,
+      "width": 0.12,
+      "height": 0.2
+    },
+    "outer_rect_pct": {
+      "left": 0,
+      "top": 0,
+      "right": 0,
+      "bottom": 0
+    },
+    "rotate_with_shape": true
+  }
+}

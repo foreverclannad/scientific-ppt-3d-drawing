@@ -1,0 +1,487 @@
+{
+  "schema_version": "1.0",
+  "scene_id": "example.bcc-unit-cell",
+  "title": "Editable BCC unit cell",
+  "domain": "crystallography",
+  "representation": "3d",
+  "abstraction": {
+    "target_claim": "Show the eight corner sites and one body-centre site without confusing visual clipping with occupancy.",
+    "essential_information": [
+      "semantic structure",
+      "direction and spatial relations"
+    ],
+    "supporting_information": [
+      "editable PowerPoint construction"
+    ],
+    "omitted_information": [
+      "unreported quantitative detail"
+    ],
+    "risk_of_misinterpretation": [
+      "decorative depth must not imply quantitative magnitude"
+    ]
+  },
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Geometry is an editable explanatory construction unless an object provenance record states otherwise.",
+      "The unit cell is an illustrative BCC geometry with explicit 1/8 corner-site and 1 body-centre contributions."
+    ]
+  },
+  "canvas": {
+    "width_pt": 960,
+    "height_pt": 540,
+    "margin_pt": 28,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 18,
+      "y": -24,
+      "z": 0
+    },
+    "origin_pt": [
+      480,
+      280
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "../styles/default-scientific-3d.style.json",
+  "object_budget": 100,
+  "objects": [
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Body-centred cubic unit cell",
+      "geometry": {
+        "left_pt": 55,
+        "top_pt": 28,
+        "width_pt": 850,
+        "height_pt": 30
+      },
+      "appearance": {
+        "font_size_pt": 18,
+        "font_weight": "bold",
+        "alignment": "center"
+      }
+    },
+    {
+      "id": "bcc.corner.01",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_corner_site",
+      "geometry": {
+        "position3d": [
+          -75.0,
+          -75.0,
+          -75.0
+        ],
+        "fractional": [
+          0,
+          0,
+          0
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 0.125
+      },
+      "appearance": {
+        "fill": "#7AA7D9",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "corner"
+      }
+    },
+    {
+      "id": "bcc.corner.02",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_corner_site",
+      "geometry": {
+        "position3d": [
+          75.0,
+          -75.0,
+          -75.0
+        ],
+        "fractional": [
+          1,
+          0,
+          0
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 0.125
+      },
+      "appearance": {
+        "fill": "#7AA7D9",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "corner"
+      }
+    },
+    {
+      "id": "bcc.corner.03",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_corner_site",
+      "geometry": {
+        "position3d": [
+          -75.0,
+          75.0,
+          -75.0
+        ],
+        "fractional": [
+          0,
+          1,
+          0
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 0.125
+      },
+      "appearance": {
+        "fill": "#7AA7D9",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "corner"
+      }
+    },
+    {
+      "id": "bcc.corner.04",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_corner_site",
+      "geometry": {
+        "position3d": [
+          75.0,
+          75.0,
+          -75.0
+        ],
+        "fractional": [
+          1,
+          1,
+          0
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 0.125
+      },
+      "appearance": {
+        "fill": "#7AA7D9",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "corner"
+      }
+    },
+    {
+      "id": "bcc.corner.05",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_corner_site",
+      "geometry": {
+        "position3d": [
+          -75.0,
+          -75.0,
+          75.0
+        ],
+        "fractional": [
+          0,
+          0,
+          1
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 0.125
+      },
+      "appearance": {
+        "fill": "#7AA7D9",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "corner"
+      }
+    },
+    {
+      "id": "bcc.corner.06",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_corner_site",
+      "geometry": {
+        "position3d": [
+          75.0,
+          -75.0,
+          75.0
+        ],
+        "fractional": [
+          1,
+          0,
+          1
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 0.125
+      },
+      "appearance": {
+        "fill": "#7AA7D9",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "corner"
+      }
+    },
+    {
+      "id": "bcc.corner.07",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_corner_site",
+      "geometry": {
+        "position3d": [
+          -75.0,
+          75.0,
+          75.0
+        ],
+        "fractional": [
+          0,
+          1,
+          1
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 0.125
+      },
+      "appearance": {
+        "fill": "#7AA7D9",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "corner"
+      }
+    },
+    {
+      "id": "bcc.corner.08",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_corner_site",
+      "geometry": {
+        "position3d": [
+          75.0,
+          75.0,
+          75.0
+        ],
+        "fractional": [
+          1,
+          1,
+          1
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 0.125
+      },
+      "appearance": {
+        "fill": "#7AA7D9",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "corner"
+      }
+    },
+    {
+      "id": "bcc.body_center",
+      "kind": "atom",
+      "element": "A",
+      "semantic_role": "bcc_body_center_site",
+      "geometry": {
+        "position3d": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fractional": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "radius_pt": 13.0,
+        "unit_cell_fraction": 1.0
+      },
+      "appearance": {
+        "fill": "#D98A4A",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "generator": "bcc",
+        "site": "body_center"
+      }
+    },
+    {
+      "id": "bcc.edge.01",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.01",
+      "to": "bcc.corner.02",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.02",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.01",
+      "to": "bcc.corner.03",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.03",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.01",
+      "to": "bcc.corner.05",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.04",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.02",
+      "to": "bcc.corner.04",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.05",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.02",
+      "to": "bcc.corner.06",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.06",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.03",
+      "to": "bcc.corner.04",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.07",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.03",
+      "to": "bcc.corner.07",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.08",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.04",
+      "to": "bcc.corner.08",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.09",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.05",
+      "to": "bcc.corner.06",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.10",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.05",
+      "to": "bcc.corner.07",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.11",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.06",
+      "to": "bcc.corner.08",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    },
+    {
+      "id": "bcc.edge.12",
+      "kind": "connector",
+      "semantic_role": "unit_cell_edge",
+      "from": "bcc.corner.07",
+      "to": "bcc.corner.08",
+      "appearance": {
+        "line": "#65717E",
+        "line_width_pt": 1.2,
+        "transparency": 0.2
+      }
+    }
+  ],
+  "constraints": [
+    "semantic_object_names",
+    "editable_native_objects",
+    "single_camera_and_light_rig"
+  ],
+  "outputs": {
+    "pptx": "artifacts/example.bcc-unit-cell.pptx",
+    "preview_png": "artifacts/example.bcc-unit-cell.png",
+    "scene_copy": "artifacts/example.bcc-unit-cell.scene.json",
+    "object_manifest": "artifacts/example.bcc-unit-cell.objects.json",
+    "qa_report": "artifacts/example.bcc-unit-cell.qa.json"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "scene_id": "example.native-water-molecule",
+  "title": "Native editable molecular model",
+  "domain": "computational_chemistry",
+  "representation": "3d",
+  "abstraction": {
+    "target_claim": "Show a PowerPoint-native ball-and-stick molecule with explicit coordinates and connectivity.",
+    "essential_information": [
+      "semantic structure",
+      "direction and spatial relations"
+    ],
+    "supporting_information": [
+      "editable PowerPoint construction"
+    ],
+    "omitted_information": [
+      "unreported quantitative detail"
+    ],
+    "risk_of_misinterpretation": [
+      "decorative depth must not imply quantitative magnitude"
+    ]
+  },
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Coordinates and bonds are an illustrative water-like arrangement, not a quantitative geometry claim.",
+      "Element colours and radii are display tokens."
+    ]
+  },
+  "canvas": {
+    "width_pt": 960,
+    "height_pt": 540,
+    "margin_pt": 28,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 18,
+      "y": -24,
+      "z": 0
+    },
+    "origin_pt": [
+      480,
+      280
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "../styles/default-scientific-3d.style.json",
+  "object_budget": 40,
+  "objects": [
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Editable water molecule — explicit illustrative coordinates",
+      "geometry": {
+        "left_pt": 60,
+        "top_pt": 30,
+        "width_pt": 840,
+        "height_pt": 34
+      },
+      "appearance": {
+        "font_size_pt": 18,
+        "font_weight": "bold",
+        "alignment": "center"
+      }
+    },
+    {
+      "id": "water.atom.O",
+      "kind": "atom",
+      "element": "O",
+      "geometry": {
+        "position3d": [
+          0,
+          0,
+          0
+        ],
+        "radius_pt": 30
+      },
+      "appearance": {
+        "fill": "#E53935",
+        "outline": "#9F1E1E",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "source": "illustrative example"
+      }
+    },
+    {
+      "id": "water.atom.H1",
+      "kind": "atom",
+      "element": "H",
+      "geometry": {
+        "position3d": [
+          -78,
+          -55,
+          12
+        ],
+        "radius_pt": 20
+      },
+      "appearance": {
+        "fill": "#F5F5F5",
+        "outline": "#9CA3AF",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "source": "illustrative example"
+      }
+    },
+    {
+      "id": "water.atom.H2",
+      "kind": "atom",
+      "element": "H",
+      "geometry": {
+        "position3d": [
+          78,
+          -55,
+          -12
+        ],
+        "radius_pt": 20
+      },
+      "appearance": {
+        "fill": "#F5F5F5",
+        "outline": "#9CA3AF",
+        "material": "plastic",
+        "bevel": "round"
+      },
+      "provenance": {
+        "source": "illustrative example"
+      }
+    },
+    {
+      "id": "water.bond.1",
+      "kind": "bond",
+      "from": "water.atom.O",
+      "to": "water.atom.H1",
+      "geometry": {
+        "radius_pt": 3,
+        "bond_order": 1
+      },
+      "appearance": {
+        "line": "#B8B8B8",
+        "line_width_pt": 7,
+        "line_cap": "round"
+      },
+      "provenance": {
+        "bond_source": "explicit example"
+      }
+    },
+    {
+      "id": "water.bond.2",
+      "kind": "bond",
+      "from": "water.atom.O",
+      "to": "water.atom.H2",
+      "geometry": {
+        "radius_pt": 3,
+        "bond_order": 1
+      },
+      "appearance": {
+        "line": "#B8B8B8",
+        "line_width_pt": 7,
+        "line_cap": "round"
+      },
+      "provenance": {
+        "bond_source": "explicit example"
+      }
+    }
+  ],
+  "constraints": [
+    "semantic_object_names",
+    "editable_native_objects",
+    "single_camera_and_light_rig"
+  ],
+  "outputs": {
+    "pptx": "artifacts/example.native-water-molecule.pptx",
+    "preview_png": "artifacts/example.native-water-molecule.png",
+    "scene_copy": "artifacts/example.native-water-molecule.scene.json",
+    "object_manifest": "artifacts/example.native-water-molecule.objects.json",
+    "qa_report": "artifacts/example.native-water-molecule.qa.json"
+  }
+}

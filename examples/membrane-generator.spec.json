@@ -1,0 +1,15 @@
+{
+  "id_prefix": "demo_membrane",
+  "path": {
+    "type": "wave",
+    "x_start": -120,
+    "x_end": 120,
+    "base_y": 0,
+    "amplitude": 22,
+    "cycles": 1.0
+  },
+  "count": 16,
+  "leaflet_separation": 20,
+  "closed": false,
+  "z": 0
+}

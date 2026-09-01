@@ -1,0 +1,344 @@
+{
+  "manifest_version": "1.0",
+  "archives": [
+    {
+      "name": "PPT3D科研绘图.zip",
+      "video_count": 12,
+      "total_duration_seconds": 11927.476,
+      "total_duration_hms": "03:18:47",
+      "size_bytes": 522371699,
+      "sha256": "99b5b771af2070083ab27c577dd1864b2c5998e88010a6b9ea8746f631f8359b"
+    },
+    {
+      "name": "PPT3D科研绘图02.zip",
+      "video_count": 7,
+      "total_duration_seconds": 7013.081,
+      "total_duration_hms": "01:56:53",
+      "size_bytes": 324010787,
+      "sha256": "4e4696887efafe075b86f30341b030eeab3c60840930969f81219ee6356d36ce"
+    },
+    {
+      "name": "PPT3D科研绘图03.zip",
+      "video_count": 6,
+      "total_duration_seconds": 7718.85,
+      "total_duration_hms": "02:08:39",
+      "size_bytes": 392835276,
+      "sha256": "379dfa8690e107e85814b36cff2f76b62be76e475bcb3d6a96efc222979adf24"
+    }
+  ],
+  "video_count": 25,
+  "total_duration_seconds": 26659.407,
+  "total_duration_hms": "07:24:19",
+  "contains_asset_library": true,
+  "contains_source_pptx": true,
+  "analysis": {
+    "visual_sampling": "interval sampling across full durations",
+    "targeted_keyframes": true,
+    "visible_slide_text_review": true,
+    "visible_powerpoint_operations": true,
+    "complete_audio_transcript": false
+  },
+  "videos": [
+    {
+      "id": "2.1",
+      "title": "第1节 深度与旋转（打开3D绘图的大门）",
+      "duration": "00:13:34",
+      "topics": [
+        "extrusion depth",
+        "3D rotation",
+        "layered structures"
+      ]
+    },
+    {
+      "id": "2.2",
+      "title": "第2节 三维旋转参数详解（知道PPT有3个坐标系吗？）",
+      "duration": "00:05:00",
+      "topics": [
+        "page coordinates",
+        "selection-box coordinates",
+        "object coordinates",
+        "rotation calibration"
+      ]
+    },
+    {
+      "id": "2.3",
+      "title": "第3节 图形布尔运算（这个功能很强大）",
+      "duration": "00:13:12",
+      "topics": [
+        "union",
+        "combine",
+        "fragment",
+        "intersect",
+        "subtract",
+        "selection order"
+      ]
+    },
+    {
+      "id": "2.4",
+      "title": "第4节 材料与光源（如何得到漂亮的质感）",
+      "duration": "00:10:14",
+      "topics": [
+        "materials",
+        "lighting presets",
+        "three-point/balanced lighting",
+        "transparency"
+      ]
+    },
+    {
+      "id": "2.5",
+      "title": "第5节 纹理与渐变（变化无穷的形状填充）",
+      "duration": "00:20:00",
+      "topics": [
+        "texture mapping",
+        "linear/radial/rectangular/path gradients",
+        "transparency"
+      ]
+    },
+    {
+      "id": "2.6",
+      "title": "第6节 曲线与线条编辑（自由画出任何形状）",
+      "duration": "00:20:11",
+      "topics": [
+        "freeforms",
+        "edit points",
+        "smooth/straight/corner vertices",
+        "caps",
+        "joins",
+        "arrows"
+      ]
+    },
+    {
+      "id": "2.7",
+      "title": "第7节 棱台（12种三维曲面）",
+      "duration": "00:18:43",
+      "topics": [
+        "bevel presets",
+        "sphere",
+        "cylinder",
+        "torus",
+        "cone",
+        "capsule",
+        "curved components"
+      ]
+    },
+    {
+      "id": "2.8",
+      "title": "第8节 组合与距底边高度（打通3D作图的任督二脉）",
+      "duration": "00:16:30",
+      "topics": [
+        "grouping",
+        "distance from ground",
+        "Z coordinate",
+        "molecular construction"
+      ]
+    },
+    {
+      "id": "2.9",
+      "title": "第9节 作图思路（万变不离其宗）",
+      "duration": "00:17:33",
+      "topics": [
+        "decompose-draw-transform-group-adjust",
+        "transparent assemblies",
+        "arrays"
+      ]
+    },
+    {
+      "id": "3.6",
+      "title": "第14节 透视法与拼接法（另辟蹊径的3D作图新方案·上）",
+      "duration": "00:13:36",
+      "topics": [
+        "perspective",
+        "face stitching",
+        "patterned cubes",
+        "porous structures"
+      ]
+    },
+    {
+      "id": "3.7",
+      "title": "第15节 积分法（另辟蹊径的3D作图新方案·下）",
+      "duration": "00:18:22",
+      "topics": [
+        "path distribution",
+        "helices",
+        "DNA-like structures",
+        "waves",
+        "polymers"
+      ]
+    },
+    {
+      "id": "3.8",
+      "title": "第15.5节 积分法2（3D箭头、3D编织结构、3D螺旋线）",
+      "duration": "00:31:47",
+      "topics": [
+        "3D arrows",
+        "weaves",
+        "helices",
+        "coordinate mapping",
+        "camera-space layer reorder",
+        "interlocking rings"
+      ]
+    },
+    {
+      "id": "3.9",
+      "title": "第16节 渐变锐化（以一敌多的重要技巧）",
+      "duration": "00:17:47",
+      "duration_seconds": 1066.663,
+      "topics": [
+        "coincident gradient stops",
+        "hard transitions",
+        "segmented lines and rings",
+        "curve segmentation"
+      ]
+    },
+    {
+      "id": "3.10",
+      "title": "第17节 剖面（解开形状剖面的秘密）",
+      "duration": "00:20:32",
+      "duration_seconds": 1231.903,
+      "topics": [
+        "cross-section geometry",
+        "shell/cap/interior/rim",
+        "normal-light relationship",
+        "porous and polyhedral cutaways"
+      ]
+    },
+    {
+      "id": "3.11",
+      "title": "第18节 渐变中心（打破PPT的渐变功能限制）",
+      "duration": "00:12:32",
+      "duration_seconds": 751.903,
+      "topics": [
+        "inner/outer gradient centers",
+        "fill-to rectangle geometry",
+        "off-center highlights",
+        "DrawingML adapter requirement"
+      ]
+    },
+    {
+      "id": "4.3",
+      "title": "第22节 超分子包合（柱芳烃 杯芳烃 葫芦脲 环糊精）",
+      "duration": "00:11:10",
+      "duration_seconds": 669.503,
+      "topics": [
+        "host–guest envelopes",
+        "transparent panels and rims",
+        "cavity/guest occlusion",
+        "illustrative chemistry templates"
+      ]
+    },
+    {
+      "id": "4.4",
+      "title": "第23节 晶格（常见的晶格结构）",
+      "duration": "00:28:55",
+      "duration_seconds": 1735.303,
+      "topics": [
+        "unit cells and motifs",
+        "fractional coordinates",
+        "periodic arrays",
+        "polyhedra and layered materials"
+      ]
+    },
+    {
+      "id": "4.5",
+      "title": "第24节 细胞膜（平整和弯曲的细胞膜）",
+      "duration": "00:09:15",
+      "duration_seconds": 554.663,
+      "topics": [
+        "lipid template",
+        "bilayer arrays",
+        "tangent-normal path frames",
+        "curved membranes and vesicles"
+      ]
+    },
+    {
+      "id": "4.6",
+      "title": "第25节 2D平面绘图（媲美AI的细胞信号通路图）",
+      "duration": "00:16:43",
+      "duration_seconds": 1003.143,
+      "topics": [
+        "shape + style",
+        "freeforms and booleans",
+        "outline/gradient/shadow/highlight",
+        "pathway symbols and connectors"
+      ]
+    },
+    {
+      "id": "4.7-final",
+      "title": "第26节 配色（搞定专业级配色）",
+      "duration": "00:21:44",
+      "duration_seconds": 1304.103,
+      "topics": [
+        "semantic palette",
+        "hue/saturation/lightness hierarchy",
+        "neutral support colours",
+        "contrast and grayscale checks"
+      ]
+    },
+    {
+      "id": "4.9",
+      "title": "第28节 抽象（科研绘图的本质）",
+      "duration": "00:08:04",
+      "duration_seconds": 484.383,
+      "topics": [
+        "scientific claim",
+        "abstraction",
+        "information noise removal",
+        "fidelity and misinterpretation risk"
+      ]
+    },
+    {
+      "id": "6.2",
+      "title": "第32节 渐变锐化2（体心立方晶胞、经纬线和电磁波）",
+      "duration": "00:18:02",
+      "duration_seconds": 1081.503,
+      "topics": [
+        "BCC unit cell",
+        "latitude-longitude sphere",
+        "electromagnetic wave",
+        "front/back curve splitting"
+      ]
+    },
+    {
+      "id": "6.6",
+      "title": "第36节 3D烧杯和试管（直播补充内容）",
+      "duration": "00:26:08",
+      "duration_seconds": 1567.626,
+      "topics": [
+        "layered transparent labware",
+        "beaker/test tube",
+        "rim and meniscus",
+        "front/back occlusion"
+      ]
+    },
+    {
+      "id": "6.7",
+      "title": "第37节 13种箭头（直播补充内容）",
+      "duration": "00:35:36",
+      "duration_seconds": 2136.282,
+      "topics": [
+        "five line arrow families",
+        "four planar arrow families",
+        "four 3D arrow families",
+        "semantic arrow selection"
+      ]
+    },
+    {
+      "id": "6.8",
+      "title": "第38节 3D分子模型（直播补充内容）",
+      "duration": "00:19:05",
+      "duration_seconds": 1144.953,
+      "topics": [
+        "PowerPoint-native ball-and-stick",
+        "MOL/XYZ workflow",
+        "external 3D models",
+        "ChemOffice/MolView/ThreeD comparison"
+      ]
+    }
+  ],
+  "source_ppt_archive": {
+    "name": "课件.zip",
+    "deck_count": 25,
+    "size_bytes": 82264428,
+    "sha256": "7892bd77b74ab1d607fe5f6b7adc21569fb27463d70cc0712d92e99741af103d"
+  }
+}

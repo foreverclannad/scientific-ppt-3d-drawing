@@ -1,0 +1,17 @@
+{
+  "id_prefix": "test.sphere",
+  "radius": 50,
+  "latitudes": 3,
+  "longitudes": 6,
+  "samples_per_curve": 36,
+  "center": [
+    12,
+    -4,
+    7
+  ],
+  "view_direction": [
+    0,
+    0,
+    1
+  ]
+}

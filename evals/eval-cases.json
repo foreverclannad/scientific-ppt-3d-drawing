@@ -1,0 +1,149 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "example.arrow-taxonomy",
+      "scene": "../examples/arrow-taxonomy.scene.json",
+      "expected": {
+        "object_count": 38,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.bcc-unit-cell",
+      "scene": "../examples/bcc-unit-cell.scene.json",
+      "expected": {
+        "object_count": 22,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "cell-signaling-pathway",
+      "scene": "../examples/cell-signaling-pathway.scene.json",
+      "expected": {
+        "object_count": 10,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.computational-chemistry.tetrahedral-molecule",
+      "scene": "../examples/computational-chemistry-molecule.scene.json",
+      "expected": {
+        "object_count": 11,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.computer-science.closed-loop-architecture",
+      "scene": "../examples/computer-architecture.scene.json",
+      "expected": {
+        "object_count": 11,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "crystal-lattice",
+      "scene": "../examples/crystal-lattice.scene.json",
+      "expected": {
+        "object_count": 3,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "curved-membrane",
+      "scene": "../examples/curved-membrane.scene.json",
+      "expected": {
+        "object_count": 3,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "cutaway-sphere",
+      "scene": "../examples/cutaway-sphere.scene.json",
+      "expected": {
+        "object_count": 5,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.electromagnetic-wave",
+      "scene": "../examples/electromagnetic-wave.scene.json",
+      "expected": {
+        "object_count": 40,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "gradient-hard-stop-line",
+      "scene": "../examples/gradient-hard-stop-line.scene.json",
+      "expected": {
+        "object_count": 3,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.layered-beaker",
+      "scene": "../examples/layered-beaker.scene.json",
+      "expected": {
+        "object_count": 8,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.native-water-molecule",
+      "scene": "../examples/native-molecule.scene.json",
+      "expected": {
+        "object_count": 6,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "off-center-gradient",
+      "scene": "../examples/off-center-gradient.scene.json",
+      "expected": {
+        "object_count": 2,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.general-science.parametric-helix",
+      "scene": "../examples/parametric-helix.scene.json",
+      "expected": {
+        "object_count": 4,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.materials.porous-stitched-cube",
+      "scene": "../examples/porous-stitched-cube.scene.json",
+      "expected": {
+        "object_count": 5,
+        "projection_required": false
+      }
+    },
+    {
+      "id": "example.quantum-chemistry.energy-levels",
+      "scene": "../examples/quantum-energy-levels.scene.json",
+      "expected": {
+        "object_count": 9,
+        "projection_required": false
+      }
+    },
+    {
+      "id": "supramolecular-host-guest",
+      "scene": "../examples/supramolecular-host-guest.scene.json",
+      "expected": {
+        "object_count": 7,
+        "projection_required": true
+      }
+    },
+    {
+      "id": "example.wire-sphere",
+      "scene": "../examples/wire-sphere.scene.json",
+      "expected": {
+        "object_count": 22,
+        "projection_required": true
+      }
+    }
+  ]
+}

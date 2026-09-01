@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "gradient-hard-stop-line",
+  "title": "Hard-transition gradient line",
+  "domain": "general_science",
+  "representation": "2d",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Training/example scene; dimensions and geometry are illustrative unless explicitly stated."
+    ]
+  },
+  "canvas": {
+    "width_pt": 720,
+    "height_pt": 405,
+    "margin_pt": 24,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin_pt": [
+      360,
+      205
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "styles/default-scientific-3d.style.json",
+  "object_budget": 300,
+  "objects": [
+    {
+      "id": "segmented.path",
+      "kind": "gradient_shape",
+      "semantic_role": "illustrative_segmented_polymer",
+      "geometry": {
+        "points3d": [
+          [
+            -220,
+            0,
+            0
+          ],
+          [
+            -80,
+            50,
+            0
+          ],
+          [
+            80,
+            -40,
+            0
+          ],
+          [
+            220,
+            0,
+            0
+          ]
+        ],
+        "line_width_pt": 20
+      },
+      "appearance": {
+        "gradient": {
+          "type": "line",
+          "transition_mode": "hard",
+          "hard_epsilon": 0.0001,
+          "rotate_with_shape": true,
+          "semantic_role": "categorical_segments",
+          "stops": [
+            {
+              "position": 0.0,
+              "color": "#315B9A"
+            },
+            {
+              "position": 0.32,
+              "color": "#547FC0"
+            },
+            {
+              "position": 0.32,
+              "color": "#4B9B73"
+            },
+            {
+              "position": 0.66,
+              "color": "#73B990"
+            },
+            {
+              "position": 0.66,
+              "color": "#C16F44"
+            },
+            {
+              "position": 1.0,
+              "color": "#E39A69"
+            }
+          ]
+        }
+      },
+      "provenance": {
+        "lesson": "3.9",
+        "status": "illustrative"
+      }
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Hard-transition gradient — editable line",
+      "geometry": {
+        "position3d": [
+          -215,
+          115,
+          0
+        ]
+      }
+    },
+    {
+      "id": "note",
+      "kind": "annotation",
+      "text": "Coincident stop pairs encode categorical seams; segment interiors retain shading.",
+      "geometry": {
+        "position3d": [
+          -215,
+          -110,
+          0
+        ]
+      }
+    }
+  ],
+  "constraints": [
+    "editable_native_objects",
+    "semantic_ids",
+    "no_computer_use",
+    "render_before_completion"
+  ],
+  "outputs": {
+    "pptx": "artifacts/gradient-hard-stop-line.pptx",
+    "preview_png": "artifacts/gradient-hard-stop-line.png",
+    "scene_copy": "artifacts/gradient-hard-stop-line.scene.json",
+    "qa_report": "artifacts/gradient-hard-stop-line.qa.json"
+  }
+}

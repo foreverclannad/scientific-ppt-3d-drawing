@@ -1,0 +1,60 @@
+{
+  "style_version": "1.0",
+  "name": "journal-clean-3d-neutral",
+  "typography": {
+    "label_font": "Arial",
+    "equation_font": "Cambria Math",
+    "fallback_fonts": [
+      "Aptos",
+      "Times New Roman"
+    ],
+    "title_pt": 18,
+    "label_pt": 12,
+    "small_label_pt": 10,
+    "minimum_export_pt": 8
+  },
+  "palette": {
+    "background": "#FFFFFF",
+    "text": "#20252B",
+    "muted": "#6B7280",
+    "outline": "#374151",
+    "primary": "#315A8A",
+    "secondary": "#D97735",
+    "support": "#4E8B70",
+    "warning": "#C2822B",
+    "light_fill": "#EAF0F6",
+    "muted_text": "#6B7280",
+    "accent1": "#4E8B70",
+    "accent2": "#7956A8",
+    "accent3": "#C16F44",
+    "success": "#4E8B70",
+    "rejection": "#B33A3A",
+    "uncertain": "#7C6F64"
+  },
+  "lines": {
+    "default_width_pt": 1.5,
+    "emphasis_width_pt": 2.25,
+    "connector_width_pt": 1.5,
+    "default_cap": "round",
+    "default_join": "round"
+  },
+  "materials": {
+    "diagram_solid": "matte",
+    "molecular_atom": "warm_matte",
+    "molecular_bond": "matte",
+    "hardware": "matte",
+    "transparent_layer": "clear",
+    "metallic_component": "metal"
+  },
+  "lighting": {
+    "default_rig": "balanced_neutral",
+    "temperature": "neutral",
+    "contrast": "medium"
+  },
+  "effects": {
+    "shadow": "none",
+    "glow": "none",
+    "perspective_strength": "weak",
+    "gradient_role": "shading_only_by_default"
+  }
+}

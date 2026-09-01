@@ -1,0 +1,59 @@
+{
+  "id_prefix": "toy",
+  "origin": [
+    -36,
+    -36,
+    0
+  ],
+  "lattice_vectors": [
+    [
+      36,
+      0,
+      0
+    ],
+    [
+      0,
+      36,
+      0
+    ],
+    [
+      0,
+      0,
+      36
+    ]
+  ],
+  "basis": [
+    {
+      "id": "A",
+      "fractional": [
+        0,
+        0,
+        0
+      ],
+      "kind": "atom",
+      "element": "A",
+      "geometry": {
+        "radius_pt": 7
+      }
+    },
+    {
+      "id": "B",
+      "fractional": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "kind": "atom",
+      "element": "B",
+      "geometry": {
+        "radius_pt": 5
+      }
+    }
+  ],
+  "repeats": [
+    3,
+    2,
+    2
+  ],
+  "boundary_mode": "half_open"
+}

@@ -1,0 +1,13 @@
+{
+  "max_accents": 4,
+  "colors": {
+    "background": "#FFFFFF",
+    "text": "#1F2937",
+    "muted_text": "#64748B",
+    "primary": "#315A8A",
+    "secondary": "#4E8B70",
+    "accent1": "#D97735",
+    "rejection": "#B84A4A",
+    "uncertain": "#8B6FAE"
+  }
+}

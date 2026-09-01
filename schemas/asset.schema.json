@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/scientific-ppt-3d/asset.schema.json",
+  "title": "Scientific PowerPoint Asset Catalog",
+  "type": "object",
+  "required": [
+    "catalog_version",
+    "assets"
+  ],
+  "properties": {
+    "catalog_version": {
+      "const": "0.1"
+    },
+    "root": {
+      "type": "string"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_id",
+          "title",
+          "relative_path",
+          "format",
+          "semantic_tags",
+          "domain",
+          "editability",
+          "provenance"
+        ],
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "relative_path": {
+            "type": "string"
+          },
+          "format": {
+            "type": "string"
+          },
+          "semantic_tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "domain": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "category": {
+            "type": "string"
+          },
+          "editability": {
+            "enum": [
+              "native_powerpoint",
+              "vector",
+              "raster",
+              "unknown"
+            ]
+          },
+          "view": {
+            "type": "string"
+          },
+          "orientation": {
+            "type": "string"
+          },
+          "aspect_ratio": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "recolor_policy": {
+            "enum": [
+              "allowed",
+              "restricted",
+              "forbidden",
+              "unknown"
+            ]
+          },
+          "anchors": {
+            "type": "object"
+          },
+          "powerpoint_locator": {
+            "type": "object",
+            "properties": {
+              "deck": {
+                "type": "string"
+              },
+              "slide_index": {
+                "type": "integer"
+              },
+              "shape_name": {
+                "type": "string"
+              }
+            }
+          },
+          "scientific_metadata": {
+            "type": "object"
+          },
+          "provenance": {
+            "type": "object",
+            "required": [
+              "source"
+            ],
+            "properties": {
+              "source": {
+                "type": "string"
+              },
+              "license_or_permission": {
+                "type": "string"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

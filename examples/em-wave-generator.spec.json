@@ -1,0 +1,14 @@
+{
+  "id_prefix": "test.em",
+  "length": 180,
+  "electric_amplitude": 30,
+  "magnetic_amplitude": 22,
+  "cycles": 1.5,
+  "samples": 41,
+  "arrow_count": 5,
+  "origin": [
+    0,
+    0,
+    0
+  ]
+}

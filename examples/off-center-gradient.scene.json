@@ -1,0 +1,114 @@
+{
+  "schema_version": "0.2",
+  "scene_id": "off-center-gradient",
+  "title": "Off-center path gradient geometry",
+  "domain": "general_science",
+  "representation": "2d",
+  "fidelity": {
+    "mode": "illustrative",
+    "source_data": [],
+    "assumptions": [
+      "Training/example scene; dimensions and geometry are illustrative unless explicitly stated."
+    ]
+  },
+  "canvas": {
+    "width_pt": 720,
+    "height_pt": 405,
+    "margin_pt": 24,
+    "background": "#FFFFFF"
+  },
+  "camera": {
+    "projection": "orthographic",
+    "rotation_deg": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "origin_pt": [
+      360,
+      205
+    ],
+    "scale": 1.0
+  },
+  "style_ref": "styles/default-scientific-3d.style.json",
+  "object_budget": 300,
+  "objects": [
+    {
+      "id": "cell.body",
+      "kind": "gradient_shape",
+      "semantic_role": "illustrative_cell_symbol",
+      "geometry": {
+        "shape": "freeform",
+        "position3d": [
+          0,
+          0,
+          0
+        ],
+        "width_pt": 260,
+        "height_pt": 190
+      },
+      "appearance": {
+        "gradient": {
+          "type": "path",
+          "transition_mode": "continuous",
+          "path_shape": "shape",
+          "rotate_with_shape": true,
+          "stops": [
+            {
+              "position": 0.0,
+              "color": "#FFF7E8"
+            },
+            {
+              "position": 0.55,
+              "color": "#F0B58B"
+            },
+            {
+              "position": 1.0,
+              "color": "#9A4E72"
+            }
+          ],
+          "inner_rect_pct": {
+            "left": 18,
+            "top": 28,
+            "right": 52,
+            "bottom": 42
+          },
+          "outer_rect_pct": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          }
+        }
+      },
+      "provenance": {
+        "lesson": "3.11",
+        "status": "illustrative"
+      }
+    },
+    {
+      "id": "title",
+      "kind": "text",
+      "text": "Off-center gradient focus — requires readback validation",
+      "geometry": {
+        "position3d": [
+          -220,
+          125,
+          0
+        ]
+      }
+    }
+  ],
+  "constraints": [
+    "editable_native_objects",
+    "semantic_ids",
+    "no_computer_use",
+    "render_before_completion"
+  ],
+  "outputs": {
+    "pptx": "artifacts/off-center-gradient.pptx",
+    "preview_png": "artifacts/off-center-gradient.png",
+    "scene_copy": "artifacts/off-center-gradient.scene.json",
+    "qa_report": "artifacts/off-center-gradient.qa.json"
+  }
+}

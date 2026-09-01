@@ -1,0 +1,10 @@
+{
+  "id_prefix": "test.bcc",
+  "lattice_constant": 100,
+  "origin": [
+    0,
+    0,
+    0
+  ],
+  "include_edges": true
+}

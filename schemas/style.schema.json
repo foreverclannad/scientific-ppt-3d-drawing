@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/scientific-ppt-3d/style.schema.json",
+  "title": "Scientific PowerPoint Style Tokens",
+  "type": "object",
+  "required": [
+    "style_version",
+    "name",
+    "typography",
+    "palette",
+    "lines",
+    "materials",
+    "lighting"
+  ],
+  "properties": {
+    "style_version": {
+      "const": "0.1"
+    },
+    "name": {
+      "type": "string"
+    },
+    "typography": {
+      "type": "object"
+    },
+    "palette": {
+      "type": "object"
+    },
+    "lines": {
+      "type": "object"
+    },
+    "materials": {
+      "type": "object"
+    },
+    "lighting": {
+      "type": "object"
+    },
+    "effects": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
